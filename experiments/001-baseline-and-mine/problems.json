@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "model": "Ornith-1.5-9B",
+  "prompt_language": "en",
+  "suffix": "\n\nThe visible reply, after reasoning, must end with exactly one line:\nANSWER: <integer>\nDo not write anything after that line. Write the integer without commas, units, or words.",
+  "problems": [
+    {
+      "id": "e01",
+      "basket": "easy",
+      "answer": "391",
+      "verify": "17*23",
+      "question": "What is 17 times 23?"
+    },
+    {
+      "id": "e02",
+      "basket": "easy",
+      "answer": "1024",
+      "verify": "2**10",
+      "question": "What is 2 to the power 10?"
+    },
+    {
+      "id": "e03",
+      "basket": "easy",
+      "answer": "6",
+      "verify": "gcd(84, 30)",
+      "question": "What is the greatest common divisor of 84 and 30?"
+    },
+    {
+      "id": "e04",
+      "basket": "easy",
+      "answer": "9",
+      "verify": "divisor count of 36 = (2+1)*(2+1)",
+      "question": "How many positive divisors does 36 have?"
+    },
+    {
+      "id": "e05",
+      "basket": "easy",
+      "answer": "5050",
+      "verify": "100*101/2",
+      "question": "What is the sum of the integers from 1 through 100?"
+    },
+    {
+      "id": "e06",
+      "basket": "easy",
+      "answer": "3",
+      "verify": "pow(17, 3, 5)",
+      "question": "What is the remainder when 17 cubed is divided by 5?"
+    },
+    {
+      "id": "h01",
+      "basket": "hard",
+      "answer": "405",
+      "verify": "smallest n with v_5(n!) >= 100; v_5(404)=99, v_5(405)=100",
+      "question": "Find the smallest positive integer n such that n! has at least 100 trailing zeros."
+    },
+    {
+      "id": "h02",
+      "basket": "hard",
+      "answer": "401",
+      "verify": "|A∪B| - |(A∪B)∩C| for multiples of 3, 5, 7 up to 1000",
+      "question": "How many positive integers n ≤ 1000 are divisible by 3 or by 5, but not divisible by 7?"
+    },
+    {
+      "id": "h03",
+      "basket": "hard",
+      "answer": "31875000",
+      "verify": "only triple is 200, 375, 425; product 31875000",
+      "question": "There is exactly one Pythagorean triple of positive integers (a, b, c) with a < b < c, a squared plus b squared equal to c squared, and a + b + c = 1000. Find the product a*b*c."
+    },
+    {
+      "id": "h04",
+      "basket": "hard",
+      "answer": "5521",
+      "verify": "3**12+2**12=535537, factors=[97, 5521]",
+      "question": "Find the largest prime factor of 3^12 + 2^12."
+    },
+    {
+      "id": "h05",
+      "basket": "hard",
+      "answer": "615",
+      "verify": "n in [8, 24, 27, 44, 48, 49, 63, 75, 80, 98, 99]",
+      "question": "Call a positive integer squareful when some perfect square greater than 1 divides it. Find the sum of all positive integers n < 100 such that both n and n+1 are squareful."
+    },
+    {
+      "id": "h06",
+      "basket": "hard",
+      "answer": "376",
+      "verify": "pow(2, 100, 1000)",
+      "question": "Find 2^100 modulo 1000. The answer is the remainder, an integer from 0 to 999."
+    },
+    {
+      "id": "h07",
+      "basket": "hard",
+      "answer": "2",
+      "verify": "starts 18+19+20+21+22; 9+10+11+12+13+14+15+16",
+      "question": "A consecutive representation of a positive integer N is a sequence of two or more consecutive positive integers that add up to N. How many consecutive representations does 100 have?"
+    },
+    {
+      "id": "h08",
+      "basket": "hard",
+      "answer": "1060",
+      "verify": "25 primes below 100, trial division matches the sieve",
+      "question": "Find the sum of all prime numbers strictly less than 100."
+    }
+  ]
+}

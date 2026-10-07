@@ -1,0 +1,6041 @@
+{
+  "strict_problems": [
+    "e01",
+    "e02",
+    "e04",
+    "e05",
+    "e06",
+    "h02",
+    "h03",
+    "h04",
+    "h05",
+    "h06",
+    "h07"
+  ],
+  "splits": {
+    "e01": {
+      "used": true,
+      "strict": true,
+      "reason": null,
+      "n_correct": 4,
+      "dropped_middle": 0,
+      "short_n": 2,
+      "long_n": 2,
+      "short_median_tokens": 12.0,
+      "long_median_tokens": 37.0,
+      "ratio": 3.0833333333333335
+    },
+    "e02": {
+      "used": true,
+      "strict": true,
+      "reason": null,
+      "n_correct": 4,
+      "dropped_middle": 0,
+      "short_n": 2,
+      "long_n": 2,
+      "short_median_tokens": 19.0,
+      "long_median_tokens": 27.0,
+      "ratio": 1.4210526315789473
+    },
+    "e03": {
+      "used": true,
+      "strict": false,
+      "reason": "length ratio under 1.25",
+      "n_correct": 4,
+      "dropped_middle": 0,
+      "short_n": 2,
+      "long_n": 2,
+      "short_median_tokens": 52.0,
+      "long_median_tokens": 58.0,
+      "ratio": 1.1153846153846154
+    },
+    "e04": {
+      "used": true,
+      "strict": true,
+      "reason": null,
+      "n_correct": 4,
+      "dropped_middle": 0,
+      "short_n": 2,
+      "long_n": 2,
+      "short_median_tokens": 29.0,
+      "long_median_tokens": 102.0,
+      "ratio": 3.5172413793103448
+    },
+    "e05": {
+      "used": true,
+      "strict": true,
+      "reason": null,
+      "n_correct": 4,
+      "dropped_middle": 0,
+      "short_n": 2,
+      "long_n": 2,
+      "short_median_tokens": 32.0,
+      "long_median_tokens": 40.0,
+      "ratio": 1.25
+    },
+    "e06": {
+      "used": true,
+      "strict": true,
+      "reason": null,
+      "n_correct": 4,
+      "dropped_middle": 0,
+      "short_n": 2,
+      "long_n": 2,
+      "short_median_tokens": 48.5,
+      "long_median_tokens": 76.0,
+      "ratio": 1.5670103092783505
+    },
+    "h01": {
+      "used": true,
+      "strict": false,
+      "reason": "length ratio under 1.25",
+      "n_correct": 4,
+      "dropped_middle": 0,
+      "short_n": 2,
+      "long_n": 2,
+      "short_median_tokens": 739.0,
+      "long_median_tokens": 798.0,
+      "ratio": 1.0798376184032477
+    },
+    "h02": {
+      "used": true,
+      "strict": true,
+      "reason": null,
+      "n_correct": 4,
+      "dropped_middle": 0,
+      "short_n": 2,
+      "long_n": 2,
+      "short_median_tokens": 531.5,
+      "long_median_tokens": 828.0,
+      "ratio": 1.5578551269990593
+    },
+    "h03": {
+      "used": true,
+      "strict": true,
+      "reason": null,
+      "n_correct": 3,
+      "dropped_middle": 1,
+      "short_n": 1,
+      "long_n": 1,
+      "short_median_tokens": 173,
+      "long_median_tokens": 2486,
+      "ratio": 14.369942196531792
+    },
+    "h04": {
+      "used": true,
+      "strict": true,
+      "reason": null,
+      "n_correct": 4,
+      "dropped_middle": 0,
+      "short_n": 2,
+      "long_n": 2,
+      "short_median_tokens": 1974.5,
+      "long_median_tokens": 2571.0,
+      "ratio": 1.302101797923525
+    },
+    "h05": {
+      "used": true,
+      "strict": true,
+      "reason": null,
+      "n_correct": 3,
+      "dropped_middle": 1,
+      "short_n": 1,
+      "long_n": 1,
+      "short_median_tokens": 2787,
+      "long_median_tokens": 6828,
+      "ratio": 2.44994617868676
+    },
+    "h06": {
+      "used": true,
+      "strict": true,
+      "reason": null,
+      "n_correct": 4,
+      "dropped_middle": 0,
+      "short_n": 2,
+      "long_n": 2,
+      "short_median_tokens": 555.0,
+      "long_median_tokens": 1100.5,
+      "ratio": 1.9828828828828828
+    },
+    "h07": {
+      "used": true,
+      "strict": true,
+      "reason": null,
+      "n_correct": 4,
+      "dropped_middle": 0,
+      "short_n": 2,
+      "long_n": 2,
+      "short_median_tokens": 1223.5,
+      "long_median_tokens": 1832.0,
+      "ratio": 1.4973436861463016
+    },
+    "h08": {
+      "used": true,
+      "strict": false,
+      "reason": "length ratio under 1.25",
+      "n_correct": 4,
+      "dropped_middle": 0,
+      "short_n": 2,
+      "long_n": 2,
+      "short_median_tokens": 730.5,
+      "long_median_tokens": 878.5,
+      "ratio": 1.2026009582477755
+    }
+  },
+  "tokens": [
+    {
+      "kind": "token",
+      "surface": " strictly",
+      "token_ids": [
+        24660
+      ],
+      "support_problems": [
+        "h03",
+        "h05"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 1.0,
+      "mean_presence_short": 0.0,
+      "score": 1.0,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        "d<1000 strictly, and a=0).",
+        " n < 100 strictly and whether the problem wants n"
+      ],
+      "encodings": [
+        {
+          "text": "strictly",
+          "ids": [
+            6418,
+            391
+          ],
+          "pieces": [
+            "strict",
+            "ly"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " strictly",
+          "ids": [
+            24660
+          ],
+          "pieces": [
+            " strictly"
+          ],
+          "single_token": true
+        },
+        {
+          "text": "Strictly",
+          "ids": [
+            40476,
+            391
+          ],
+          "pieces": [
+            "Strict",
+            "ly"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " Strictly",
+          "ids": [
+            51103,
+            391
+          ],
+          "pieces": [
+            " Strict",
+            "ly"
+          ],
+          "single_token": false
+        }
+      ]
+    },
+    {
+      "kind": "token",
+      "surface": " give",
+      "token_ids": [
+        2873
+      ],
+      "support_problems": [
+        "h03",
+        "h05"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 1.0,
+      "mean_presence_short": 0.0,
+      "score": 1.0,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        "- Let me think which combos give ~708-9",
+        "00.  My pairs give n = 8, "
+      ],
+      "encodings": [
+        {
+          "text": "give",
+          "ids": [
+            44883
+          ],
+          "pieces": [
+            "give"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " give",
+          "ids": [
+            2873
+          ],
+          "pieces": [
+            " give"
+          ],
+          "single_token": true
+        },
+        {
+          "text": "Give",
+          "ids": [
+            33963
+          ],
+          "pieces": [
+            "Give"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " Give",
+          "ids": [
+            20052
+          ],
+          "pieces": [
+            " Give"
+          ],
+          "single_token": true
+        }
+      ]
+    },
+    {
+      "kind": "token",
+      "surface": " excluded",
+      "token_ids": [
+        26554
+      ],
+      "support_problems": [
+        "h03",
+        "h05"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 1.0,
+      "mean_presence_short": 0.0,
+      "score": 1.0,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        ", so 625 excluded). b=3:",
+        " n=100 is excluded since n < 10"
+      ],
+      "encodings": [
+        {
+          "text": "excluded",
+          "ids": [
+            325,
+            9878
+          ],
+          "pieces": [
+            "ex",
+            "cluded"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " excluded",
+          "ids": [
+            26554
+          ],
+          "pieces": [
+            " excluded"
+          ],
+          "single_token": true
+        },
+        {
+          "text": "Excluded",
+          "ids": [
+            814,
+            9878
+          ],
+          "pieces": [
+            "Ex",
+            "cluded"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " Excluded",
+          "ids": [
+            1326,
+            9878
+          ],
+          "pieces": [
+            " Ex",
+            "cluded"
+          ],
+          "single_token": false
+        }
+      ]
+    },
+    {
+      "kind": "token",
+      "surface": " other",
+      "token_ids": [
+        975
+      ],
+      "support_problems": [
+        "h03",
+        "h05"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 1.0,
+      "mean_presence_short": 0.0,
+      "score": 1.0,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        "5.   Let me check other divisors to confirm uniqueness.",
+        " re-verify there are no other pairs. I should double check"
+      ],
+      "encodings": [
+        {
+          "text": "other",
+          "ids": [
+            1520
+          ],
+          "pieces": [
+            "other"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " other",
+          "ids": [
+            975
+          ],
+          "pieces": [
+            " other"
+          ],
+          "single_token": true
+        },
+        {
+          "text": "Other",
+          "ids": [
+            11081
+          ],
+          "pieces": [
+            "Other"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " Other",
+          "ids": [
+            6728
+          ],
+          "pieces": [
+            " Other"
+          ],
+          "single_token": true
+        }
+      ]
+    },
+    {
+      "kind": "token",
+      "surface": " range",
+      "token_ids": [
+        2020
+      ],
+      "support_problems": [
+        "h03",
+        "h05"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 1.0,
+      "mean_presence_short": 0.0,
+      "score": 1.0,
+      "late_bias": 0.8333333333333334,
+      "strict_pass": true,
+      "examples": [
+        ". Let me find those in range (707, ",
+        "101? out of range but n+1=1"
+      ],
+      "encodings": [
+        {
+          "text": "range",
+          "ids": [
+            9381
+          ],
+          "pieces": [
+            "range"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " range",
+          "ids": [
+            2020
+          ],
+          "pieces": [
+            " range"
+          ],
+          "single_token": true
+        },
+        {
+          "text": "Range",
+          "ids": [
+            5857
+          ],
+          "pieces": [
+            "Range"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " Range",
+          "ids": [
+            15955
+          ],
+          "pieces": [
+            " Range"
+          ],
+          "single_token": true
+        }
+      ]
+    },
+    {
+      "kind": "token",
+      "surface": " reconsider",
+      "token_ids": [
+        37781
+      ],
+      "support_problems": [
+        "h04",
+        "h05",
+        "h07"
+      ],
+      "support": 3,
+      "mean_presence_long_late": 1.0,
+      "mean_presence_short": 0.16666666666666666,
+      "score": 0.8333333333333334,
+      "late_bias": 0.8461538461538461,
+      "strict_pass": true,
+      "examples": [
+        " any factor.  Let me reconsider. Actually let me reconsider the",
+        " is prime.  Let me reconsider - is there a nicer factor"
+      ],
+      "encodings": [
+        {
+          "text": "reconsider",
+          "ids": [
+            265,
+            23934
+          ],
+          "pieces": [
+            "re",
+            "consider"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " reconsider",
+          "ids": [
+            37781
+          ],
+          "pieces": [
+            " reconsider"
+          ],
+          "single_token": true
+        },
+        {
+          "text": "Reconsider",
+          "ids": [
+            674,
+            23934
+          ],
+          "pieces": [
+            "Re",
+            "consider"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " Reconsider",
+          "ids": [
+            997,
+            23934
+          ],
+          "pieces": [
+            " Re",
+            "consider"
+          ],
+          "single_token": false
+        }
+      ]
+    },
+    {
+      "kind": "token",
+      "surface": " formula",
+      "token_ids": [
+        14377
+      ],
+      "support_problems": [
+        "e04",
+        "h07"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 0.75,
+      "mean_presence_short": 0.0,
+      "score": 0.75,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        "  Let me verify using the formula. 36 = ",
+        "Actually let me reconsider. The formula $a = \\frac{"
+      ],
+      "encodings": [
+        {
+          "text": "formula",
+          "ids": [
+            57489
+          ],
+          "pieces": [
+            "formula"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " formula",
+          "ids": [
+            14377
+          ],
+          "pieces": [
+            " formula"
+          ],
+          "single_token": true
+        },
+        {
+          "text": "Formula",
+          "ids": [
+            50903
+          ],
+          "pieces": [
+            "Formula"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " Formula",
+          "ids": [
+            29815
+          ],
+          "pieces": [
+            " Formula"
+          ],
+          "single_token": true
+        }
+      ]
+    },
+    {
+      "kind": "token",
+      "surface": " valid",
+      "token_ids": [
+        2610
+      ],
+      "support_problems": [
+        "h03",
+        "h07"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 0.75,
+      "mean_presence_short": 0.0,
+      "score": 0.75,
+      "late_bias": 0.6666666666666666,
+      "strict_pass": true,
+      "examples": [
+        "0, not positive. Not valid. b=2:",
+        ". Invalid.  So the valid ones are k=1 ("
+      ],
+      "encodings": [
+        {
+          "text": "valid",
+          "ids": [
+            1826
+          ],
+          "pieces": [
+            "valid"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " valid",
+          "ids": [
+            2610
+          ],
+          "pieces": [
+            " valid"
+          ],
+          "single_token": true
+        },
+        {
+          "text": "Valid",
+          "ids": [
+            3952
+          ],
+          "pieces": [
+            "Valid"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " Valid",
+          "ids": [
+            7571
+          ],
+          "pieces": [
+            " Valid"
+          ],
+          "single_token": true
+        }
+      ]
+    },
+    {
+      "kind": "token",
+      "surface": " only",
+      "token_ids": [
+        1132
+      ],
+      "support_problems": [
+        "h03",
+        "h07"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 0.75,
+      "mean_presence_short": 0.0,
+      "score": 0.75,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        "9. None.  So only d=800.",
+        "4$. No.  So only $k=5$ and"
+      ],
+      "encodings": [
+        {
+          "text": "only",
+          "ids": [
+            3138
+          ],
+          "pieces": [
+            "only"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " only",
+          "ids": [
+            1132
+          ],
+          "pieces": [
+            " only"
+          ],
+          "single_token": true
+        },
+        {
+          "text": "Only",
+          "ids": [
+            7081
+          ],
+          "pieces": [
+            "Only"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " Only",
+          "ids": [
+            8020
+          ],
+          "pieces": [
+            " Only"
+          ],
+          "single_token": true
+        }
+      ]
+    },
+    {
+      "kind": "token",
+      "surface": " divides",
+      "token_ids": [
+        62634
+      ],
+      "support_problems": [
+        "h03",
+        "h06"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 0.75,
+      "mean_presence_short": 0.0,
+      "score": 0.75,
+      "late_bias": 0.6,
+      "strict_pass": true,
+      "examples": [
+        "07.1 and d divides 50000",
+        " ≡ 1 because order divides 100). Actually"
+      ],
+      "encodings": [
+        {
+          "text": "divides",
+          "ids": [
+            596,
+            3232
+          ],
+          "pieces": [
+            "div",
+            "ides"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " divides",
+          "ids": [
+            62634
+          ],
+          "pieces": [
+            " divides"
+          ],
+          "single_token": true
+        },
+        {
+          "text": "Divides",
+          "ids": [
+            12151,
+            3232
+          ],
+          "pieces": [
+            "Div",
+            "ides"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " Divides",
+          "ids": [
+            8500,
+            3232
+          ],
+          "pieces": [
+            " Div",
+            "ides"
+          ],
+          "single_token": false
+        }
+      ]
+    },
+    {
+      "kind": "token",
+      "surface": " checking",
+      "token_ids": [
+        12910
+      ],
+      "support_problems": [
+        "h04",
+        "h05"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 0.75,
+      "mean_presence_short": 0.0,
+      "score": 0.75,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        "521 is prime by checking it's not divisible by ",
+        " the list S is complete by checking every number 1-1"
+      ],
+      "encodings": [
+        {
+          "text": "checking",
+          "ids": [
+            55914
+          ],
+          "pieces": [
+            "checking"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " checking",
+          "ids": [
+            12910
+          ],
+          "pieces": [
+            " checking"
+          ],
+          "single_token": true
+        },
+        {
+          "text": "Checking",
+          "ids": [
+            38797
+          ],
+          "pieces": [
+            "Checking"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " Checking",
+          "ids": [
+            44555
+          ],
+          "pieces": [
+            " Checking"
+          ],
+          "single_token": true
+        }
+      ]
+    },
+    {
+      "kind": "token",
+      "surface": " safe",
+      "token_ids": [
+        5902
+      ],
+      "support_problems": [
+        "h04",
+        "h05"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 0.75,
+      "mean_presence_short": 0.0,
+      "score": 0.75,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        " algebraic factorization to be safe.  3^12",
+        " non-listed numbers to be safe: - 2:"
+      ],
+      "encodings": [
+        {
+          "text": "safe",
+          "ids": [
+            18112
+          ],
+          "pieces": [
+            "safe"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " safe",
+          "ids": [
+            5902
+          ],
+          "pieces": [
+            " safe"
+          ],
+          "single_token": true
+        },
+        {
+          "text": "Safe",
+          "ids": [
+            24845
+          ],
+          "pieces": [
+            "Safe"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " Safe",
+          "ids": [
+            21600
+          ],
+          "pieces": [
+            " Safe"
+          ],
+          "single_token": true
+        }
+      ]
+    },
+    {
+      "kind": "token",
+      "surface": " any",
+      "token_ids": [
+        866
+      ],
+      "support_problems": [
+        "h04",
+        "h05"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 0.75,
+      "mean_presence_short": 0.0,
+      "score": 0.75,
+      "late_bias": 0.8,
+      "strict_pass": true,
+      "examples": [
+        " prime and I didn't miss any factor.  Let me reconsider",
+        " double check I haven't missed any pairs. Let me list all"
+      ],
+      "encodings": [
+        {
+          "text": "any",
+          "ids": [
+            3639
+          ],
+          "pieces": [
+            "any"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " any",
+          "ids": [
+            866
+          ],
+          "pieces": [
+            " any"
+          ],
+          "single_token": true
+        },
+        {
+          "text": "Any",
+          "ids": [
+            8347
+          ],
+          "pieces": [
+            "Any"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " Any",
+          "ids": [
+            5586
+          ],
+          "pieces": [
+            " Any"
+          ],
+          "single_token": true
+        }
+      ]
+    },
+    {
+      "kind": "token",
+      "surface": " over",
+      "token_ids": [
+        888
+      ],
+      "support_problems": [
+        "h04",
+        "h05"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 1.0,
+      "mean_presence_short": 0.25,
+      "score": 0.75,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        "^4 doesn't factor nicely over integers (Sophie Germain",
+        "^12 doesn't factor over integers in an obvious way unless"
+      ],
+      "encodings": [
+        {
+          "text": "over",
+          "ids": [
+            1908
+          ],
+          "pieces": [
+            "over"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " over",
+          "ids": [
+            888
+          ],
+          "pieces": [
+            " over"
+          ],
+          "single_token": true
+        },
+        {
+          "text": "Over",
+          "ids": [
+            1853
+          ],
+          "pieces": [
+            "Over"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " Over",
+          "ids": [
+            5875
+          ],
+          "pieces": [
+            " Over"
+          ],
+          "single_token": true
+        }
+      ]
+    },
+    {
+      "kind": "token",
+      "surface": " sure",
+      "token_ids": [
+        2617
+      ],
+      "support_problems": [
+        "h04",
+        "h05"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 0.75,
+      "mean_presence_short": 0.0,
+      "score": 0.75,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        " squares factorization approach to make sure.  3^12",
+        " on non-squareful to make sure I'm not missing a square"
+      ],
+      "encodings": [
+        {
+          "text": "sure",
+          "ids": [
+            18523
+          ],
+          "pieces": [
+            "sure"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " sure",
+          "ids": [
+            2617
+          ],
+          "pieces": [
+            " sure"
+          ],
+          "single_token": true
+        },
+        {
+          "text": "Sure",
+          "ids": [
+            38493
+          ],
+          "pieces": [
+            "Sure"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " Sure",
+          "ids": [
+            21855
+          ],
+          "pieces": [
+            " Sure"
+          ],
+          "single_token": true
+        }
+      ]
+    },
+    {
+      "kind": "token",
+      "surface": " make",
+      "token_ids": [
+        1236
+      ],
+      "support_problems": [
+        "h04",
+        "h05"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 0.75,
+      "mean_presence_short": 0.0,
+      "score": 0.75,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        " of squares factorization approach to make sure.  3^1",
+        " focusing on non-squareful to make sure I'm not missing a"
+      ],
+      "encodings": [
+        {
+          "text": "make",
+          "ids": [
+            6711
+          ],
+          "pieces": [
+            "make"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " make",
+          "ids": [
+            1236
+          ],
+          "pieces": [
+            " make"
+          ],
+          "single_token": true
+        },
+        {
+          "text": "Make",
+          "ids": [
+            7825
+          ],
+          "pieces": [
+            "Make"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " Make",
+          "ids": [
+            7170
+          ],
+          "pieces": [
+            " Make"
+          ],
+          "single_token": true
+        }
+      ]
+    },
+    {
+      "kind": "token",
+      "surface": " once",
+      "token_ids": [
+        2957
+      ],
+      "support_problems": [
+        "h04",
+        "h05"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 0.75,
+      "mean_presence_short": 0.0,
+      "score": 0.75,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        "535537 once more. 3^1",
+        " me re-verify the sum once more carefully.  8 "
+      ],
+      "encodings": [
+        {
+          "text": "once",
+          "ids": [
+            12802
+          ],
+          "pieces": [
+            "once"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " once",
+          "ids": [
+            2957
+          ],
+          "pieces": [
+            " once"
+          ],
+          "single_token": true
+        },
+        {
+          "text": "Once",
+          "ids": [
+            12162
+          ],
+          "pieces": [
+            "Once"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " Once",
+          "ids": [
+            9358
+          ],
+          "pieces": [
+            " Once"
+          ],
+          "single_token": true
+        }
+      ]
+    },
+    {
+      "kind": "token",
+      "surface": " exactly",
+      "token_ids": [
+        6681
+      ],
+      "support_problems": [
+        "h05",
+        "h06"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 0.75,
+      "mean_presence_short": 0.0,
+      "score": 0.75,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        " just verify my sorted list has exactly the squareful numbers. A",
+        "8 = 47, exactly, so 376"
+      ],
+      "encodings": [
+        {
+          "text": "exactly",
+          "ids": [
+            325,
+            31654
+          ],
+          "pieces": [
+            "ex",
+            "actly"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " exactly",
+          "ids": [
+            6681
+          ],
+          "pieces": [
+            " exactly"
+          ],
+          "single_token": true
+        },
+        {
+          "text": "Exactly",
+          "ids": [
+            63151
+          ],
+          "pieces": [
+            "Exactly"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " Exactly",
+          "ids": [
+            66172
+          ],
+          "pieces": [
+            " Exactly"
+          ],
+          "single_token": true
+        }
+      ]
+    },
+    {
+      "kind": "token",
+      "surface": "Great",
+      "token_ids": [
+        20740
+      ],
+      "support_problems": [
+        "h05",
+        "h06"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 0.75,
+      "mean_presence_short": 0.0,
+      "score": 0.75,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        " 615.  Great, 615.",
+        " 376.  Great, 376 confirmed"
+      ],
+      "encodings": [
+        {
+          "text": "Great",
+          "ids": [
+            20740
+          ],
+          "pieces": [
+            "Great"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " Great",
+          "ids": [
+            8252
+          ],
+          "pieces": [
+            " Great"
+          ],
+          "single_token": true
+        }
+      ]
+    },
+    {
+      "kind": "token",
+      "surface": " Good",
+      "token_ids": [
+        7441
+      ],
+      "support_problems": [
+        "h05",
+        "h06"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 0.75,
+      "mean_presence_short": 0.0,
+      "score": 0.75,
+      "late_bias": 0.6,
+      "strict_pass": true,
+      "examples": [
+        "=98: yes. Good.  Wait, let me",
+        " 0 mod 8. Good.  So 2^"
+      ],
+      "encodings": [
+        {
+          "text": "Good",
+          "ids": [
+            14773
+          ],
+          "pieces": [
+            "Good"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " Good",
+          "ids": [
+            7441
+          ],
+          "pieces": [
+            " Good"
+          ],
+          "single_token": true
+        }
+      ]
+    },
+    {
+      "kind": "token",
+      "surface": " since",
+      "token_ids": [
+        2394
+      ],
+      "support_problems": [
+        "h05",
+        "h06"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 0.75,
+      "mean_presence_short": 0.0,
+      "score": 0.75,
+      "late_bias": 0.75,
+      "strict_pass": true,
+      "examples": [
+        "=100 is excluded since n < 100",
+        " By Euler's theorem, yes since gcd(2,12"
+      ],
+      "encodings": [
+        {
+          "text": "since",
+          "ids": [
+            10957
+          ],
+          "pieces": [
+            "since"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " since",
+          "ids": [
+            2394
+          ],
+          "pieces": [
+            " since"
+          ],
+          "single_token": true
+        },
+        {
+          "text": "Since",
+          "ids": [
+            12189
+          ],
+          "pieces": [
+            "Since"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " Since",
+          "ids": [
+            8439
+          ],
+          "pieces": [
+            " Since"
+          ],
+          "single_token": true
+        }
+      ]
+    },
+    {
+      "kind": "token",
+      "surface": " must",
+      "token_ids": [
+        1902
+      ],
+      "support_problems": [
+        "h05",
+        "h07"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 1.0,
+      "mean_presence_short": 0.25,
+      "score": 0.75,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        " Both n and n+1 must be squareful. n+",
+        "{k-1}{2}$ must be an integer.  Let"
+      ],
+      "encodings": [
+        {
+          "text": "must",
+          "ids": [
+            24028
+          ],
+          "pieces": [
+            "must"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " must",
+          "ids": [
+            1902
+          ],
+          "pieces": [
+            " must"
+          ],
+          "single_token": true
+        },
+        {
+          "text": "Must",
+          "ids": [
+            30733
+          ],
+          "pieces": [
+            "Must"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " Must",
+          "ids": [
+            15011
+          ],
+          "pieces": [
+            " Must"
+          ],
+          "single_token": true
+        }
+      ]
+    },
+    {
+      "kind": "token",
+      "surface": "check",
+      "token_ids": [
+        1960
+      ],
+      "support_problems": [
+        "h05",
+        "h07"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 0.75,
+      "mean_presence_short": 0.0,
+      "score": 0.75,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        "ful numbers. Let me recheck multiples of 9 up to",
+        "4.  Let me recheck all:  $k=2"
+      ],
+      "encodings": [
+        {
+          "text": "check",
+          "ids": [
+            1960
+          ],
+          "pieces": [
+            "check"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " check",
+          "ids": [
+            1716
+          ],
+          "pieces": [
+            " check"
+          ],
+          "single_token": true
+        },
+        {
+          "text": "Check",
+          "ids": [
+            3840
+          ],
+          "pieces": [
+            "Check"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " Check",
+          "ids": [
+            4109
+          ],
+          "pieces": [
+            " Check"
+          ],
+          "single_token": true
+        }
+      ]
+    },
+    {
+      "kind": "token",
+      "surface": " gives",
+      "token_ids": [
+        6486
+      ],
+      "support_problems": [
+        "h03",
+        "h05",
+        "h07"
+      ],
+      "support": 3,
+      "mean_presence_long_late": 0.8333333333333334,
+      "mean_presence_short": 0.16666666666666666,
+      "score": 0.6666666666666666,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        " d=1000 gives a=0, not positive",
+        "0. n=99 gives n+1=10"
+      ],
+      "encodings": [
+        {
+          "text": "gives",
+          "ids": [
+            70,
+            1821
+          ],
+          "pieces": [
+            "g",
+            "ives"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " gives",
+          "ids": [
+            6486
+          ],
+          "pieces": [
+            " gives"
+          ],
+          "single_token": true
+        },
+        {
+          "text": "Gives",
+          "ids": [
+            38,
+            1821
+          ],
+          "pieces": [
+            "G",
+            "ives"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " Gives",
+          "ids": [
+            66581
+          ],
+          "pieces": [
+            " Gives"
+          ],
+          "single_token": true
+        }
+      ]
+    },
+    {
+      "kind": "token",
+      "surface": "'ve",
+      "token_ids": [
+        2908
+      ],
+      "support_problems": [
+        "h04",
+        "h05",
+        "h07"
+      ],
+      "support": 3,
+      "mean_presence_long_late": 0.6666666666666666,
+      "mean_presence_short": 0.0,
+      "score": 0.6666666666666666,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        " 74.  We've checked up to 73",
+        " 2² that I might've missed... no.  Let"
+      ],
+      "encodings": [
+        {
+          "text": "'ve",
+          "ids": [
+            2908
+          ],
+          "pieces": [
+            "'ve"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " 've",
+          "ids": [
+            359,
+            571
+          ],
+          "pieces": [
+            " '",
+            "ve"
+          ],
+          "single_token": false
+        }
+      ]
+    },
+    {
+      "kind": "token",
+      "surface": " about",
+      "token_ids": [
+        883
+      ],
+      "support_problems": [
+        "h04",
+        "h05",
+        "h07"
+      ],
+      "support": 3,
+      "mean_presence_long_late": 0.8333333333333334,
+      "mean_presence_short": 0.16666666666666666,
+      "score": 0.6666666666666666,
+      "late_bias": 0.8,
+      "strict_pass": true,
+      "examples": [
+        "5521) is about 74.3.",
+        "12. Let me think about this using cyclotomic-style"
+      ],
+      "encodings": [
+        {
+          "text": "about",
+          "ids": [
+            8823
+          ],
+          "pieces": [
+            "about"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " about",
+          "ids": [
+            883
+          ],
+          "pieces": [
+            " about"
+          ],
+          "single_token": true
+        },
+        {
+          "text": "About",
+          "ids": [
+            10181
+          ],
+          "pieces": [
+            "About"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " About",
+          "ids": [
+            9680
+          ],
+          "pieces": [
+            " About"
+          ],
+          "single_token": true
+        }
+      ]
+    },
+    {
+      "kind": "token",
+      "surface": " Actually",
+      "token_ids": [
+        32645
+      ],
+      "support_problems": [
+        "h03",
+        "h04",
+        "h05",
+        "h06",
+        "h07"
+      ],
+      "support": 5,
+      "mean_presence_long_late": 0.8,
+      "mean_presence_short": 0.2,
+      "score": 0.6,
+      "late_bias": 0.6666666666666666,
+      "strict_pass": true,
+      "examples": [
+        ", and a=0). Actually d=1000",
+        ".  Let me reconsider. Actually let me reconsider the algebraic"
+      ],
+      "encodings": [
+        {
+          "text": "Actually",
+          "ids": [
+            50821
+          ],
+          "pieces": [
+            "Actually"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " Actually",
+          "ids": [
+            32645
+          ],
+          "pieces": [
+            " Actually"
+          ],
+          "single_token": true
+        }
+      ]
+    },
+    {
+      "kind": "token",
+      "surface": " yes",
+      "token_ids": [
+        9542
+      ],
+      "support_problems": [
+        "h03",
+        "h04",
+        "h05",
+        "h06",
+        "h07"
+      ],
+      "support": 5,
+      "mean_presence_long_late": 0.7,
+      "mean_presence_short": 0.2,
+      "score": 0.5,
+      "late_bias": 0.875,
+      "strict_pass": true,
+      "examples": [
+        " > 375, yes. a < b < c",
+        "21 prime? We showed yes.  So the largest prime"
+      ],
+      "encodings": [
+        {
+          "text": "yes",
+          "ids": [
+            9405
+          ],
+          "pieces": [
+            "yes"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " yes",
+          "ids": [
+            9542
+          ],
+          "pieces": [
+            " yes"
+          ],
+          "single_token": true
+        },
+        {
+          "text": "Yes",
+          "ids": [
+            9175
+          ],
+          "pieces": [
+            "Yes"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " Yes",
+          "ids": [
+            7179
+          ],
+          "pieces": [
+            " Yes"
+          ],
+          "single_token": true
+        }
+      ]
+    },
+    {
+      "kind": "token",
+      "surface": " using",
+      "token_ids": [
+        1608
+      ],
+      "support_problems": [
+        "e04",
+        "h02",
+        "h04"
+      ],
+      "support": 3,
+      "mean_presence_long_late": 0.5,
+      "mean_presence_short": 0.0,
+      "score": 0.5,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        "isors.  Let me verify using the formula. 36",
+        "  Wait let me recompute using inclusion-exclusion properly.  "
+      ],
+      "encodings": [
+        {
+          "text": "using",
+          "ids": [
+            940
+          ],
+          "pieces": [
+            "using"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " using",
+          "ids": [
+            1608
+          ],
+          "pieces": [
+            " using"
+          ],
+          "single_token": true
+        },
+        {
+          "text": "Using",
+          "ids": [
+            15947
+          ],
+          "pieces": [
+            "Using"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " Using",
+          "ids": [
+            11747
+          ],
+          "pieces": [
+            " Using"
+          ],
+          "single_token": true
+        }
+      ]
+    },
+    {
+      "kind": "token",
+      "surface": " think",
+      "token_ids": [
+        1683
+      ],
+      "support_problems": [
+        "h03",
+        "h04",
+        "h07"
+      ],
+      "support": 3,
+      "mean_presence_long_late": 0.6666666666666666,
+      "mean_presence_short": 0.16666666666666666,
+      "score": 0.5,
+      "late_bias": 0.8,
+      "strict_pass": true,
+      "examples": [
+        " big. - Let me think which combos give ~70",
+        "^12. Let me think about this using cyclotomic"
+      ],
+      "encodings": [
+        {
+          "text": "think",
+          "ids": [
+            26003
+          ],
+          "pieces": [
+            "think"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " think",
+          "ids": [
+            1683
+          ],
+          "pieces": [
+            " think"
+          ],
+          "single_token": true
+        },
+        {
+          "text": "Think",
+          "ids": [
+            37405
+          ],
+          "pieces": [
+            "Think"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " Think",
+          "ids": [
+            20500
+          ],
+          "pieces": [
+            " Think"
+          ],
+          "single_token": true
+        }
+      ]
+    },
+    {
+      "kind": "token",
+      "surface": "Hmm",
+      "token_ids": [
+        77264
+      ],
+      "support_problems": [
+        "h04",
+        "h05",
+        "h07"
+      ],
+      "support": 3,
+      "mean_presence_long_late": 0.6666666666666666,
+      "mean_presence_short": 0.16666666666666666,
+      "score": 0.5,
+      "late_bias": 0.6666666666666666,
+      "strict_pass": true,
+      "examples": [
+        " 8^4.  Hmm, a^4 + b",
+        ".  All good.  Hmm wait, is there any number"
+      ],
+      "encodings": [
+        {
+          "text": "Hmm",
+          "ids": [
+            77264
+          ],
+          "pieces": [
+            "Hmm"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " Hmm",
+          "ids": [
+            85152
+          ],
+          "pieces": [
+            " Hmm"
+          ],
+          "single_token": true
+        }
+      ]
+    },
+    {
+      "kind": "token",
+      "surface": " there",
+      "token_ids": [
+        1017
+      ],
+      "support_problems": [
+        "h04",
+        "h05",
+        "h07"
+      ],
+      "support": 3,
+      "mean_presence_long_late": 0.6666666666666666,
+      "mean_presence_short": 0.16666666666666666,
+      "score": 0.5,
+      "late_bias": 0.7777777777777778,
+      "strict_pass": true,
+      "examples": [
+        "  Let me reconsider - is there a nicer factorization?   ",
+        "  Let me re-verify there are no other pairs. I"
+      ],
+      "encodings": [
+        {
+          "text": "there",
+          "ids": [
+            17977
+          ],
+          "pieces": [
+            "there"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " there",
+          "ids": [
+            1017
+          ],
+          "pieces": [
+            " there"
+          ],
+          "single_token": true
+        },
+        {
+          "text": "There",
+          "ids": [
+            3733
+          ],
+          "pieces": [
+            "There"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " There",
+          "ids": [
+            2532
+          ],
+          "pieces": [
+            " There"
+          ],
+          "single_token": true
+        }
+      ]
+    },
+    {
+      "kind": "token",
+      "surface": " listing",
+      "token_ids": [
+        14408
+      ],
+      "support_problems": [
+        "e04",
+        "h07"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 0.5,
+      "mean_presence_short": 0.0,
+      "score": 0.5,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        ".  Let me verify by listing them: 1, ",
+        ".  Let me verify by listing: - 18"
+      ],
+      "encodings": [
+        {
+          "text": "listing",
+          "ids": [
+            33451
+          ],
+          "pieces": [
+            "listing"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " listing",
+          "ids": [
+            14408
+          ],
+          "pieces": [
+            " listing"
+          ],
+          "single_token": true
+        },
+        {
+          "text": "Listing",
+          "ids": [
+            50793
+          ],
+          "pieces": [
+            "Listing"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " Listing",
+          "ids": [
+            37482
+          ],
+          "pieces": [
+            " Listing"
+          ],
+          "single_token": true
+        }
+      ]
+    },
+    {
+      "kind": "token",
+      "surface": "Alternatively",
+      "token_ids": [
+        88842
+      ],
+      "support_problems": [
+        "e06",
+        "h04"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 0.75,
+      "mean_presence_short": 0.25,
+      "score": 0.5,
+      "late_bias": 0.75,
+      "strict_pass": true,
+      "examples": [
+        "2 remainder 3.  Alternatively, 17 mod ",
+        " remainder is 3.  Alternatively, 17 mod "
+      ],
+      "encodings": [
+        {
+          "text": "Alternatively",
+          "ids": [
+            88842
+          ],
+          "pieces": [
+            "Alternatively"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " Alternatively",
+          "ids": [
+            37201
+          ],
+          "pieces": [
+            " Alternatively"
+          ],
+          "single_token": true
+        }
+      ]
+    },
+    {
+      "kind": "token",
+      "surface": " way",
+      "token_ids": [
+        1560
+      ],
+      "support_problems": [
+        "h04",
+        "h07"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 0.5,
+      "mean_presence_short": 0.0,
+      "score": 0.5,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        " factor over integers in an obvious way unless we treat it as (",
+        " sum of consecutive integers in a way related to odd divisor d."
+      ],
+      "encodings": [
+        {
+          "text": "way",
+          "ids": [
+            3017
+          ],
+          "pieces": [
+            "way"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " way",
+          "ids": [
+            1560
+          ],
+          "pieces": [
+            " way"
+          ],
+          "single_token": true
+        },
+        {
+          "text": "Way",
+          "ids": [
+            33894
+          ],
+          "pieces": [
+            "Way"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " Way",
+          "ids": [
+            11801
+          ],
+          "pieces": [
+            " Way"
+          ],
+          "single_token": true
+        }
+      ]
+    },
+    {
+      "kind": "token",
+      "surface": " approach",
+      "token_ids": [
+        5313
+      ],
+      "support_problems": [
+        "h04",
+        "h06"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 0.5,
+      "mean_presence_short": 0.0,
+      "score": 0.5,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        " the sum of squares factorization approach to make sure.  3",
+        " me verify with Euler's theorem approach. phi(125"
+      ],
+      "encodings": [
+        {
+          "text": "approach",
+          "ids": [
+            15246,
+            595
+          ],
+          "pieces": [
+            "appro",
+            "ach"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " approach",
+          "ids": [
+            5313
+          ],
+          "pieces": [
+            " approach"
+          ],
+          "single_token": true
+        },
+        {
+          "text": "Approach",
+          "ids": [
+            27654,
+            595
+          ],
+          "pieces": [
+            "Appro",
+            "ach"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " Approach",
+          "ids": [
+            51301
+          ],
+          "pieces": [
+            " Approach"
+          ],
+          "single_token": true
+        }
+      ]
+    },
+    {
+      "kind": "token",
+      "surface": " others",
+      "token_ids": [
+        3672
+      ],
+      "support_problems": [
+        "h05",
+        "h07"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 0.75,
+      "mean_presence_short": 0.25,
+      "score": 0.5,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        "100 ✓  Any others? Let me scan: ",
+        "=8)  Are there others? Let me think about the"
+      ],
+      "encodings": [
+        {
+          "text": "others",
+          "ids": [
+            56871
+          ],
+          "pieces": [
+            "others"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " others",
+          "ids": [
+            3672
+          ],
+          "pieces": [
+            " others"
+          ],
+          "single_token": true
+        },
+        {
+          "text": "Others",
+          "ids": [
+            48369
+          ],
+          "pieces": [
+            "Others"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " Others",
+          "ids": [
+            24235
+          ],
+          "pieces": [
+            " Others"
+          ],
+          "single_token": true
+        }
+      ]
+    },
+    {
+      "kind": "token",
+      "surface": " carefully",
+      "token_ids": [
+        15060
+      ],
+      "support_problems": [
+        "h05",
+        "h07"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 0.75,
+      "mean_presence_short": 0.25,
+      "score": 0.5,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        " all consecutive squareful pairs more carefully.  Actually let me reconsider",
+        ". Let me recompute more carefully.  Actually let me reconsider"
+      ],
+      "encodings": [
+        {
+          "text": "carefully",
+          "ids": [
+            10193,
+            3518
+          ],
+          "pieces": [
+            "care",
+            "fully"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " carefully",
+          "ids": [
+            15060
+          ],
+          "pieces": [
+            " carefully"
+          ],
+          "single_token": true
+        },
+        {
+          "text": "Carefully",
+          "ids": [
+            30945,
+            3518
+          ],
+          "pieces": [
+            "Care",
+            "fully"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " Carefully",
+          "ids": [
+            10312,
+            3518
+          ],
+          "pieces": [
+            " Care",
+            "fully"
+          ],
+          "single_token": false
+        }
+      ]
+    },
+    {
+      "kind": "token",
+      "surface": " whether",
+      "token_ids": [
+        3315
+      ],
+      "support_problems": [
+        "h05",
+        "h07"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 0.75,
+      "mean_presence_short": 0.25,
+      "score": 0.5,
+      "late_bias": 0.8,
+      "strict_pass": true,
+      "examples": [
+        "Wait, I should double-check whether n < 100",
+        "Wait, let me double check whether I've found all. Let"
+      ],
+      "encodings": [
+        {
+          "text": "whether",
+          "ids": [
+            47132
+          ],
+          "pieces": [
+            "whether"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " whether",
+          "ids": [
+            3315
+          ],
+          "pieces": [
+            " whether"
+          ],
+          "single_token": true
+        },
+        {
+          "text": "Whether",
+          "ids": [
+            23922
+          ],
+          "pieces": [
+            "Whether"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " Whether",
+          "ids": [
+            12757
+          ],
+          "pieces": [
+            " Whether"
+          ],
+          "single_token": true
+        }
+      ]
+    },
+    {
+      "kind": "token",
+      "surface": " one",
+      "token_ids": [
+        799
+      ],
+      "support_problems": [
+        "h05",
+        "h07"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 0.75,
+      "mean_presence_short": 0.25,
+      "score": 0.5,
+      "late_bias": 0.6666666666666666,
+      "strict_pass": true,
+      "examples": [
+        "'m not missing a squareful one, and vice versa.  ",
+        " positive integers (with at least one term) equals the number of"
+      ],
+      "encodings": [
+        {
+          "text": "one",
+          "ids": [
+            588
+          ],
+          "pieces": [
+            "one"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " one",
+          "ids": [
+            799
+          ],
+          "pieces": [
+            " one"
+          ],
+          "single_token": true
+        },
+        {
+          "text": "One",
+          "ids": [
+            3833
+          ],
+          "pieces": [
+            "One"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " One",
+          "ids": [
+            3648
+          ],
+          "pieces": [
+            " One"
+          ],
+          "single_token": true
+        }
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "kind": "phrase",
+      "surface": "let me check",
+      "support_problems": [
+        "h03",
+        "h05"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 1.0,
+      "mean_presence_short": 0.0,
+      "score": 1.0,
+      "late_bias": 0.6666666666666666,
+      "strict_pass": true,
+      "examples": [
+        "375, yes. a < b < c: 200 < 375 < 425.   Let me check other divisors to confirm uniqueness.  ",
+        "carefully.  Actually let me reconsider. Let me check all numbers from 1 to 100 and see conse"
+      ],
+      "encodings": [
+        {
+          "text": "let me check",
+          "ids": [
+            1112,
+            728,
+            1716
+          ],
+          "pieces": [
+            "let",
+            " me",
+            " check"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " let me check",
+          "ids": [
+            1042,
+            728,
+            1716
+          ],
+          "pieces": [
+            " let",
+            " me",
+            " check"
+          ],
+          "single_token": false
+        },
+        {
+          "text": "Let me check",
+          "ids": [
+            9764,
+            728,
+            1716
+          ],
+          "pieces": [
+            "Let",
+            " me",
+            " check"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " Let me check",
+          "ids": [
+            6558,
+            728,
+            1716
+          ],
+          "pieces": [
+            " Let",
+            " me",
+            " check"
+          ],
+          "single_token": false
+        }
+      ]
+    },
+    {
+      "kind": "phrase",
+      "surface": "a b where",
+      "support_problems": [
+        "h03",
+        "h04"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 1.0,
+      "mean_presence_short": 0.0,
+      "score": 1.0,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        "a b where",
+        "a b where"
+      ],
+      "encodings": [
+        {
+          "text": "a b where",
+          "ids": [
+            64,
+            292,
+            1332
+          ],
+          "pieces": [
+            "a",
+            " b",
+            " where"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " a b where",
+          "ids": [
+            264,
+            292,
+            1332
+          ],
+          "pieces": [
+            " a",
+            " b",
+            " where"
+          ],
+          "single_token": false
+        },
+        {
+          "text": "A b where",
+          "ids": [
+            32,
+            292,
+            1332
+          ],
+          "pieces": [
+            "A",
+            " b",
+            " where"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " A b where",
+          "ids": [
+            357,
+            292,
+            1332
+          ],
+          "pieces": [
+            " A",
+            " b",
+            " where"
+          ],
+          "single_token": false
+        }
+      ]
+    },
+    {
+      "kind": "phrase",
+      "surface": "yes so the",
+      "support_problems": [
+        "h04",
+        "h05"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 1.0,
+      "mean_presence_short": 0.0,
+      "score": 1.0,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        "yes so the",
+        "yes so the"
+      ],
+      "encodings": [
+        {
+          "text": "yes so the",
+          "ids": [
+            9405,
+            748,
+            279
+          ],
+          "pieces": [
+            "yes",
+            " so",
+            " the"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " yes so the",
+          "ids": [
+            9542,
+            748,
+            279
+          ],
+          "pieces": [
+            " yes",
+            " so",
+            " the"
+          ],
+          "single_token": false
+        },
+        {
+          "text": "Yes so the",
+          "ids": [
+            9175,
+            748,
+            279
+          ],
+          "pieces": [
+            "Yes",
+            " so",
+            " the"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " Yes so the",
+          "ids": [
+            7179,
+            748,
+            279
+          ],
+          "pieces": [
+            " Yes",
+            " so",
+            " the"
+          ],
+          "single_token": false
+        }
+      ]
+    },
+    {
+      "kind": "phrase",
+      "surface": "let me reconsider",
+      "support_problems": [
+        "h04",
+        "h05",
+        "h07"
+      ],
+      "support": 3,
+      "mean_presence_long_late": 1.0,
+      "mean_presence_short": 0.16666666666666666,
+      "score": 0.8333333333333334,
+      "late_bias": 0.7142857142857143,
+      "strict_pass": true,
+      "examples": [
+        "is prime and I didn't miss any factor.  Let me reconsider. Actually let me reconsider the algebra",
+        " prime (obviously), and 5521 is prime.  Let me reconsider - is there a nicer factorization?   3^1"
+      ],
+      "encodings": [
+        {
+          "text": "let me reconsider",
+          "ids": [
+            1112,
+            728,
+            37781
+          ],
+          "pieces": [
+            "let",
+            " me",
+            " reconsider"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " let me reconsider",
+          "ids": [
+            1042,
+            728,
+            37781
+          ],
+          "pieces": [
+            " let",
+            " me",
+            " reconsider"
+          ],
+          "single_token": false
+        },
+        {
+          "text": "Let me reconsider",
+          "ids": [
+            9764,
+            728,
+            37781
+          ],
+          "pieces": [
+            "Let",
+            " me",
+            " reconsider"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " Let me reconsider",
+          "ids": [
+            6558,
+            728,
+            37781
+          ],
+          "pieces": [
+            " Let",
+            " me",
+            " reconsider"
+          ],
+          "single_token": false
+        }
+      ]
+    },
+    {
+      "kind": "phrase",
+      "surface": "b c answer",
+      "support_problems": [
+        "h02",
+        "h03"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 0.75,
+      "mean_presence_short": 0.0,
+      "score": 0.75,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        "b c answer",
+        "b c answer"
+      ],
+      "encodings": [
+        {
+          "text": "b c answer",
+          "ids": [
+            65,
+            272,
+            4087
+          ],
+          "pieces": [
+            "b",
+            " c",
+            " answer"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " b c answer",
+          "ids": [
+            292,
+            272,
+            4087
+          ],
+          "pieces": [
+            " b",
+            " c",
+            " answer"
+          ],
+          "single_token": false
+        },
+        {
+          "text": "B c answer",
+          "ids": [
+            33,
+            272,
+            4087
+          ],
+          "pieces": [
+            "B",
+            " c",
+            " answer"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " B c answer",
+          "ids": [
+            417,
+            272,
+            4087
+          ],
+          "pieces": [
+            " B",
+            " c",
+            " answer"
+          ],
+          "single_token": false
+        }
+      ]
+    },
+    {
+      "kind": "phrase",
+      "surface": "a b c answer",
+      "support_problems": [
+        "h02",
+        "h03"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 0.75,
+      "mean_presence_short": 0.0,
+      "score": 0.75,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        "a b c answer",
+        "a b c answer"
+      ],
+      "encodings": [
+        {
+          "text": "a b c answer",
+          "ids": [
+            64,
+            292,
+            272,
+            4087
+          ],
+          "pieces": [
+            "a",
+            " b",
+            " c",
+            " answer"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " a b c answer",
+          "ids": [
+            264,
+            292,
+            272,
+            4087
+          ],
+          "pieces": [
+            " a",
+            " b",
+            " c",
+            " answer"
+          ],
+          "single_token": false
+        },
+        {
+          "text": "A b c answer",
+          "ids": [
+            32,
+            292,
+            272,
+            4087
+          ],
+          "pieces": [
+            "A",
+            " b",
+            " c",
+            " answer"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " A b c answer",
+          "ids": [
+            357,
+            292,
+            272,
+            4087
+          ],
+          "pieces": [
+            " A",
+            " b",
+            " c",
+            " answer"
+          ],
+          "single_token": false
+        }
+      ]
+    },
+    {
+      "kind": "phrase",
+      "surface": "b where a",
+      "support_problems": [
+        "h03",
+        "h04"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 0.75,
+      "mean_presence_short": 0.0,
+      "score": 0.75,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        "b where a",
+        "b where a"
+      ],
+      "encodings": [
+        {
+          "text": "b where a",
+          "ids": [
+            65,
+            1332,
+            264
+          ],
+          "pieces": [
+            "b",
+            " where",
+            " a"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " b where a",
+          "ids": [
+            292,
+            1332,
+            264
+          ],
+          "pieces": [
+            " b",
+            " where",
+            " a"
+          ],
+          "single_token": false
+        },
+        {
+          "text": "B where a",
+          "ids": [
+            33,
+            1332,
+            264
+          ],
+          "pieces": [
+            "B",
+            " where",
+            " a"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " B where a",
+          "ids": [
+            417,
+            1332,
+            264
+          ],
+          "pieces": [
+            " B",
+            " where",
+            " a"
+          ],
+          "single_token": false
+        }
+      ]
+    },
+    {
+      "kind": "phrase",
+      "surface": "where a b",
+      "support_problems": [
+        "h03",
+        "h04"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 0.75,
+      "mean_presence_short": 0.0,
+      "score": 0.75,
+      "late_bias": 0.6666666666666666,
+      "strict_pass": true,
+      "examples": [
+        "where a b",
+        "where a b"
+      ],
+      "encodings": [
+        {
+          "text": "where a b",
+          "ids": [
+            2777,
+            264,
+            292
+          ],
+          "pieces": [
+            "where",
+            " a",
+            " b"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " where a b",
+          "ids": [
+            1332,
+            264,
+            292
+          ],
+          "pieces": [
+            " where",
+            " a",
+            " b"
+          ],
+          "single_token": false
+        },
+        {
+          "text": "Where a b",
+          "ids": [
+            8791,
+            264,
+            292
+          ],
+          "pieces": [
+            "Where",
+            " a",
+            " b"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " Where a b",
+          "ids": [
+            10646,
+            264,
+            292
+          ],
+          "pieces": [
+            " Where",
+            " a",
+            " b"
+          ],
+          "single_token": false
+        }
+      ]
+    },
+    {
+      "kind": "phrase",
+      "surface": "a b b",
+      "support_problems": [
+        "h03",
+        "h04"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 1.0,
+      "mean_presence_short": 0.25,
+      "score": 0.75,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        "a b b",
+        "a b b"
+      ],
+      "encodings": [
+        {
+          "text": "a b b",
+          "ids": [
+            64,
+            292,
+            292
+          ],
+          "pieces": [
+            "a",
+            " b",
+            " b"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " a b b",
+          "ids": [
+            264,
+            292,
+            292
+          ],
+          "pieces": [
+            " a",
+            " b",
+            " b"
+          ],
+          "single_token": false
+        },
+        {
+          "text": "A b b",
+          "ids": [
+            32,
+            292,
+            292
+          ],
+          "pieces": [
+            "A",
+            " b",
+            " b"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " A b b",
+          "ids": [
+            357,
+            292,
+            292
+          ],
+          "pieces": [
+            " A",
+            " b",
+            " b"
+          ],
+          "single_token": false
+        }
+      ]
+    },
+    {
+      "kind": "phrase",
+      "surface": "a b where a",
+      "support_problems": [
+        "h03",
+        "h04"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 0.75,
+      "mean_presence_short": 0.0,
+      "score": 0.75,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        "a b where a",
+        "a b where a"
+      ],
+      "encodings": [
+        {
+          "text": "a b where a",
+          "ids": [
+            64,
+            292,
+            1332,
+            264
+          ],
+          "pieces": [
+            "a",
+            " b",
+            " where",
+            " a"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " a b where a",
+          "ids": [
+            264,
+            292,
+            1332,
+            264
+          ],
+          "pieces": [
+            " a",
+            " b",
+            " where",
+            " a"
+          ],
+          "single_token": false
+        },
+        {
+          "text": "A b where a",
+          "ids": [
+            32,
+            292,
+            1332,
+            264
+          ],
+          "pieces": [
+            "A",
+            " b",
+            " where",
+            " a"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " A b where a",
+          "ids": [
+            357,
+            292,
+            1332,
+            264
+          ],
+          "pieces": [
+            " A",
+            " b",
+            " where",
+            " a"
+          ],
+          "single_token": false
+        }
+      ]
+    },
+    {
+      "kind": "phrase",
+      "surface": "b where a b",
+      "support_problems": [
+        "h03",
+        "h04"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 0.75,
+      "mean_presence_short": 0.0,
+      "score": 0.75,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        "b where a b",
+        "b where a b"
+      ],
+      "encodings": [
+        {
+          "text": "b where a b",
+          "ids": [
+            65,
+            1332,
+            264,
+            292
+          ],
+          "pieces": [
+            "b",
+            " where",
+            " a",
+            " b"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " b where a b",
+          "ids": [
+            292,
+            1332,
+            264,
+            292
+          ],
+          "pieces": [
+            " b",
+            " where",
+            " a",
+            " b"
+          ],
+          "single_token": false
+        },
+        {
+          "text": "B where a b",
+          "ids": [
+            33,
+            1332,
+            264,
+            292
+          ],
+          "pieces": [
+            "B",
+            " where",
+            " a",
+            " b"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " B where a b",
+          "ids": [
+            417,
+            1332,
+            264,
+            292
+          ],
+          "pieces": [
+            " B",
+            " where",
+            " a",
+            " b"
+          ],
+          "single_token": false
+        }
+      ]
+    },
+    {
+      "kind": "phrase",
+      "surface": "to be safe",
+      "support_problems": [
+        "h04",
+        "h05"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 0.75,
+      "mean_presence_short": 0.0,
+      "score": 0.75,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        " reconsider the algebraic factorization to be safe.  3^12 + 2^12.   We can factor a^4 + b^",
+        "  Let me check a few non-listed numbers to be safe: - 2: no - 3: no - 5,6,7: 5 no, 6 = 2·3"
+      ],
+      "encodings": [
+        {
+          "text": "to be safe",
+          "ids": [
+            951,
+            381,
+            5902
+          ],
+          "pieces": [
+            "to",
+            " be",
+            " safe"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " to be safe",
+          "ids": [
+            310,
+            381,
+            5902
+          ],
+          "pieces": [
+            " to",
+            " be",
+            " safe"
+          ],
+          "single_token": false
+        },
+        {
+          "text": "To be safe",
+          "ids": [
+            1206,
+            381,
+            5902
+          ],
+          "pieces": [
+            "To",
+            " be",
+            " safe"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " To be safe",
+          "ids": [
+            1946,
+            381,
+            5902
+          ],
+          "pieces": [
+            " To",
+            " be",
+            " safe"
+          ],
+          "single_token": false
+        }
+      ]
+    },
+    {
+      "kind": "phrase",
+      "surface": "is actually let",
+      "support_problems": [
+        "h04",
+        "h05"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 0.75,
+      "mean_presence_short": 0.0,
+      "score": 0.75,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        "is actually let",
+        "is actually let"
+      ],
+      "encodings": [
+        {
+          "text": "is actually let",
+          "ids": [
+            284,
+            3404,
+            1042
+          ],
+          "pieces": [
+            "is",
+            " actually",
+            " let"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " is actually let",
+          "ids": [
+            369,
+            3404,
+            1042
+          ],
+          "pieces": [
+            " is",
+            " actually",
+            " let"
+          ],
+          "single_token": false
+        },
+        {
+          "text": "Is actually let",
+          "ids": [
+            3742,
+            3404,
+            1042
+          ],
+          "pieces": [
+            "Is",
+            " actually",
+            " let"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " Is actually let",
+          "ids": [
+            2091,
+            3404,
+            1042
+          ],
+          "pieces": [
+            " Is",
+            " actually",
+            " let"
+          ],
+          "single_token": false
+        }
+      ]
+    },
+    {
+      "kind": "phrase",
+      "surface": "is actually let me",
+      "support_problems": [
+        "h04",
+        "h05"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 0.75,
+      "mean_presence_short": 0.0,
+      "score": 0.75,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        "is actually let me",
+        "is actually let me"
+      ],
+      "encodings": [
+        {
+          "text": "is actually let me",
+          "ids": [
+            284,
+            3404,
+            1042,
+            728
+          ],
+          "pieces": [
+            "is",
+            " actually",
+            " let",
+            " me"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " is actually let me",
+          "ids": [
+            369,
+            3404,
+            1042,
+            728
+          ],
+          "pieces": [
+            " is",
+            " actually",
+            " let",
+            " me"
+          ],
+          "single_token": false
+        },
+        {
+          "text": "Is actually let me",
+          "ids": [
+            3742,
+            3404,
+            1042,
+            728
+          ],
+          "pieces": [
+            "Is",
+            " actually",
+            " let",
+            " me"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " Is actually let me",
+          "ids": [
+            2091,
+            3404,
+            1042,
+            728
+          ],
+          "pieces": [
+            " Is",
+            " actually",
+            " let",
+            " me"
+          ],
+          "single_token": false
+        }
+      ]
+    },
+    {
+      "kind": "phrase",
+      "surface": "double check yes",
+      "support_problems": [
+        "h04",
+        "h05"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 0.75,
+      "mean_presence_short": 0.0,
+      "score": 0.75,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        "double check yes",
+        "double check yes"
+      ],
+      "encodings": [
+        {
+          "text": "double check yes",
+          "ids": [
+            4190,
+            1716,
+            9542
+          ],
+          "pieces": [
+            "double",
+            " check",
+            " yes"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " double check yes",
+          "ids": [
+            1923,
+            1716,
+            9542
+          ],
+          "pieces": [
+            " double",
+            " check",
+            " yes"
+          ],
+          "single_token": false
+        },
+        {
+          "text": "Double check yes",
+          "ids": [
+            7144,
+            1716,
+            9542
+          ],
+          "pieces": [
+            "Double",
+            " check",
+            " yes"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " Double check yes",
+          "ids": [
+            6872,
+            1716,
+            9542
+          ],
+          "pieces": [
+            " Double",
+            " check",
+            " yes"
+          ],
+          "single_token": false
+        }
+      ]
+    },
+    {
+      "kind": "phrase",
+      "surface": "yes yes so",
+      "support_problems": [
+        "h04",
+        "h05"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 0.75,
+      "mean_presence_short": 0.0,
+      "score": 0.75,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        "yes yes so",
+        "yes yes so"
+      ],
+      "encodings": [
+        {
+          "text": "yes yes so",
+          "ids": [
+            9405,
+            9542,
+            748
+          ],
+          "pieces": [
+            "yes",
+            " yes",
+            " so"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " yes yes so",
+          "ids": [
+            9542,
+            9542,
+            748
+          ],
+          "pieces": [
+            " yes",
+            " yes",
+            " so"
+          ],
+          "single_token": false
+        },
+        {
+          "text": "Yes yes so",
+          "ids": [
+            9175,
+            9542,
+            748
+          ],
+          "pieces": [
+            "Yes",
+            " yes",
+            " so"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " Yes yes so",
+          "ids": [
+            7179,
+            9542,
+            748
+          ],
+          "pieces": [
+            " Yes",
+            " yes",
+            " so"
+          ],
+          "single_token": false
+        }
+      ]
+    },
+    {
+      "kind": "phrase",
+      "surface": "to make sure",
+      "support_problems": [
+        "h04",
+        "h05"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 0.75,
+      "mean_presence_short": 0.0,
+      "score": 0.75,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        "e sum of squares factorization approach to make sure.  3^12 + 2^12 = 535537.  Since 535537 =",
+        "uare-fulness, focusing on non-squareful to make sure I'm not missing a squareful one, and vi"
+      ],
+      "encodings": [
+        {
+          "text": "to make sure",
+          "ids": [
+            951,
+            1236,
+            2617
+          ],
+          "pieces": [
+            "to",
+            " make",
+            " sure"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " to make sure",
+          "ids": [
+            310,
+            1236,
+            2617
+          ],
+          "pieces": [
+            " to",
+            " make",
+            " sure"
+          ],
+          "single_token": false
+        },
+        {
+          "text": "To make sure",
+          "ids": [
+            1206,
+            1236,
+            2617
+          ],
+          "pieces": [
+            "To",
+            " make",
+            " sure"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " To make sure",
+          "ids": [
+            1946,
+            1236,
+            2617
+          ],
+          "pieces": [
+            " To",
+            " make",
+            " sure"
+          ],
+          "single_token": false
+        }
+      ]
+    },
+    {
+      "kind": "phrase",
+      "surface": "is let me double",
+      "support_problems": [
+        "h04",
+        "h05"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 0.75,
+      "mean_presence_short": 0.0,
+      "score": 0.75,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        "is let me double",
+        "is let me double"
+      ],
+      "encodings": [
+        {
+          "text": "is let me double",
+          "ids": [
+            284,
+            1042,
+            728,
+            1923
+          ],
+          "pieces": [
+            "is",
+            " let",
+            " me",
+            " double"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " is let me double",
+          "ids": [
+            369,
+            1042,
+            728,
+            1923
+          ],
+          "pieces": [
+            " is",
+            " let",
+            " me",
+            " double"
+          ],
+          "single_token": false
+        },
+        {
+          "text": "Is let me double",
+          "ids": [
+            3742,
+            1042,
+            728,
+            1923
+          ],
+          "pieces": [
+            "Is",
+            " let",
+            " me",
+            " double"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " Is let me double",
+          "ids": [
+            2091,
+            1042,
+            728,
+            1923
+          ],
+          "pieces": [
+            " Is",
+            " let",
+            " me",
+            " double"
+          ],
+          "single_token": false
+        }
+      ]
+    },
+    {
+      "kind": "phrase",
+      "surface": "yes yes so the",
+      "support_problems": [
+        "h04",
+        "h05"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 0.75,
+      "mean_presence_short": 0.0,
+      "score": 0.75,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        "yes yes so the",
+        "yes yes so the"
+      ],
+      "encodings": [
+        {
+          "text": "yes yes so the",
+          "ids": [
+            9405,
+            9542,
+            748,
+            279
+          ],
+          "pieces": [
+            "yes",
+            " yes",
+            " so",
+            " the"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " yes yes so the",
+          "ids": [
+            9542,
+            9542,
+            748,
+            279
+          ],
+          "pieces": [
+            " yes",
+            " yes",
+            " so",
+            " the"
+          ],
+          "single_token": false
+        },
+        {
+          "text": "Yes yes so the",
+          "ids": [
+            9175,
+            9542,
+            748,
+            279
+          ],
+          "pieces": [
+            "Yes",
+            " yes",
+            " so",
+            " the"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " Yes yes so the",
+          "ids": [
+            7179,
+            9542,
+            748,
+            279
+          ],
+          "pieces": [
+            " Yes",
+            " yes",
+            " so",
+            " the"
+          ],
+          "single_token": false
+        }
+      ]
+    },
+    {
+      "kind": "phrase",
+      "surface": "carefully actually let",
+      "support_problems": [
+        "h05",
+        "h07"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 0.75,
+      "mean_presence_short": 0.0,
+      "score": 0.75,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        "carefully actually let",
+        "carefully actually let"
+      ],
+      "encodings": [
+        {
+          "text": "carefully actually let",
+          "ids": [
+            10193,
+            3518,
+            3404,
+            1042
+          ],
+          "pieces": [
+            "care",
+            "fully",
+            " actually",
+            " let"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " carefully actually let",
+          "ids": [
+            15060,
+            3404,
+            1042
+          ],
+          "pieces": [
+            " carefully",
+            " actually",
+            " let"
+          ],
+          "single_token": false
+        },
+        {
+          "text": "Carefully actually let",
+          "ids": [
+            30945,
+            3518,
+            3404,
+            1042
+          ],
+          "pieces": [
+            "Care",
+            "fully",
+            " actually",
+            " let"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " Carefully actually let",
+          "ids": [
+            10312,
+            3518,
+            3404,
+            1042
+          ],
+          "pieces": [
+            " Care",
+            "fully",
+            " actually",
+            " let"
+          ],
+          "single_token": false
+        }
+      ]
+    },
+    {
+      "kind": "phrase",
+      "surface": "me reconsider let",
+      "support_problems": [
+        "h05",
+        "h07"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 0.75,
+      "mean_presence_short": 0.0,
+      "score": 0.75,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        "me reconsider let",
+        "me reconsider let"
+      ],
+      "encodings": [
+        {
+          "text": "me reconsider let",
+          "ids": [
+            2573,
+            37781,
+            1042
+          ],
+          "pieces": [
+            "me",
+            " reconsider",
+            " let"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " me reconsider let",
+          "ids": [
+            728,
+            37781,
+            1042
+          ],
+          "pieces": [
+            " me",
+            " reconsider",
+            " let"
+          ],
+          "single_token": false
+        },
+        {
+          "text": "Me reconsider let",
+          "ids": [
+            7575,
+            37781,
+            1042
+          ],
+          "pieces": [
+            "Me",
+            " reconsider",
+            " let"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " Me reconsider let",
+          "ids": [
+            2088,
+            37781,
+            1042
+          ],
+          "pieces": [
+            " Me",
+            " reconsider",
+            " let"
+          ],
+          "single_token": false
+        }
+      ]
+    },
+    {
+      "kind": "phrase",
+      "surface": "reconsider let me",
+      "support_problems": [
+        "h05",
+        "h07"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 0.75,
+      "mean_presence_short": 0.0,
+      "score": 0.75,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        "reconsider let me",
+        "reconsider let me"
+      ],
+      "encodings": [
+        {
+          "text": "reconsider let me",
+          "ids": [
+            265,
+            23934,
+            1042,
+            728
+          ],
+          "pieces": [
+            "re",
+            "consider",
+            " let",
+            " me"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " reconsider let me",
+          "ids": [
+            37781,
+            1042,
+            728
+          ],
+          "pieces": [
+            " reconsider",
+            " let",
+            " me"
+          ],
+          "single_token": false
+        },
+        {
+          "text": "Reconsider let me",
+          "ids": [
+            674,
+            23934,
+            1042,
+            728
+          ],
+          "pieces": [
+            "Re",
+            "consider",
+            " let",
+            " me"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " Reconsider let me",
+          "ids": [
+            997,
+            23934,
+            1042,
+            728
+          ],
+          "pieces": [
+            " Re",
+            "consider",
+            " let",
+            " me"
+          ],
+          "single_token": false
+        }
+      ]
+    },
+    {
+      "kind": "phrase",
+      "surface": "let me write",
+      "support_problems": [
+        "h05",
+        "h07"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 0.75,
+      "mean_presence_short": 0.0,
+      "score": 0.75,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        "om 1 to 100 and see consecutive pairs.  Let me write out S again and look for adjacent entri",
+        "} - \\frac{k-1}{2}$ must be an integer.  Let me write $a = \\frac{200 - k(k-1)}{2k}$. For this"
+      ],
+      "encodings": [
+        {
+          "text": "let me write",
+          "ids": [
+            1112,
+            728,
+            3165
+          ],
+          "pieces": [
+            "let",
+            " me",
+            " write"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " let me write",
+          "ids": [
+            1042,
+            728,
+            3165
+          ],
+          "pieces": [
+            " let",
+            " me",
+            " write"
+          ],
+          "single_token": false
+        },
+        {
+          "text": "Let me write",
+          "ids": [
+            9764,
+            728,
+            3165
+          ],
+          "pieces": [
+            "Let",
+            " me",
+            " write"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " Let me write",
+          "ids": [
+            6558,
+            728,
+            3165
+          ],
+          "pieces": [
+            " Let",
+            " me",
+            " write"
+          ],
+          "single_token": false
+        }
+      ]
+    },
+    {
+      "kind": "phrase",
+      "surface": "others let me",
+      "support_problems": [
+        "h05",
+        "h07"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 0.75,
+      "mean_presence_short": 0.0,
+      "score": 0.75,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        "others let me",
+        "others let me"
+      ],
+      "encodings": [
+        {
+          "text": "others let me",
+          "ids": [
+            56871,
+            1042,
+            728
+          ],
+          "pieces": [
+            "others",
+            " let",
+            " me"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " others let me",
+          "ids": [
+            3672,
+            1042,
+            728
+          ],
+          "pieces": [
+            " others",
+            " let",
+            " me"
+          ],
+          "single_token": false
+        },
+        {
+          "text": "Others let me",
+          "ids": [
+            48369,
+            1042,
+            728
+          ],
+          "pieces": [
+            "Others",
+            " let",
+            " me"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " Others let me",
+          "ids": [
+            24235,
+            1042,
+            728
+          ],
+          "pieces": [
+            " Others",
+            " let",
+            " me"
+          ],
+          "single_token": false
+        }
+      ]
+    },
+    {
+      "kind": "phrase",
+      "surface": "let me recheck",
+      "support_problems": [
+        "h05",
+        "h07"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 0.75,
+      "mean_presence_short": 0.0,
+      "score": 0.75,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        "whether I missed any squareful numbers. Let me recheck multiples of 9 up to 100: 9, 18, 27, 36",
+        "> 200$ no. So $k$ ranges from 2 to 14.  Let me recheck all:  $k=2$: $a = (200 - 2)/4 = 198/4 ="
+      ],
+      "encodings": [
+        {
+          "text": "let me recheck",
+          "ids": [
+            1112,
+            728,
+            311,
+            1960
+          ],
+          "pieces": [
+            "let",
+            " me",
+            " re",
+            "check"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " let me recheck",
+          "ids": [
+            1042,
+            728,
+            311,
+            1960
+          ],
+          "pieces": [
+            " let",
+            " me",
+            " re",
+            "check"
+          ],
+          "single_token": false
+        },
+        {
+          "text": "Let me recheck",
+          "ids": [
+            9764,
+            728,
+            311,
+            1960
+          ],
+          "pieces": [
+            "Let",
+            " me",
+            " re",
+            "check"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " Let me recheck",
+          "ids": [
+            6558,
+            728,
+            311,
+            1960
+          ],
+          "pieces": [
+            " Let",
+            " me",
+            " re",
+            "check"
+          ],
+          "single_token": false
+        }
+      ]
+    },
+    {
+      "kind": "phrase",
+      "surface": "less than so",
+      "support_problems": [
+        "h05",
+        "h07"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 0.75,
+      "mean_presence_short": 0.0,
+      "score": 0.75,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        "less than so",
+        "less than so"
+      ],
+      "encodings": [
+        {
+          "text": "less than so",
+          "ids": [
+            1657,
+            1056,
+            748
+          ],
+          "pieces": [
+            "less",
+            " than",
+            " so"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " less than so",
+          "ids": [
+            2599,
+            1056,
+            748
+          ],
+          "pieces": [
+            " less",
+            " than",
+            " so"
+          ],
+          "single_token": false
+        },
+        {
+          "text": "Less than so",
+          "ids": [
+            26561,
+            1056,
+            748
+          ],
+          "pieces": [
+            "Less",
+            " than",
+            " so"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " Less than so",
+          "ids": [
+            9380,
+            1056,
+            748
+          ],
+          "pieces": [
+            " Less",
+            " than",
+            " so"
+          ],
+          "single_token": false
+        }
+      ]
+    },
+    {
+      "kind": "phrase",
+      "surface": "more carefully actually let",
+      "support_problems": [
+        "h05",
+        "h07"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 0.75,
+      "mean_presence_short": 0.0,
+      "score": 0.75,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        "more carefully actually let",
+        "more carefully actually let"
+      ],
+      "encodings": [
+        {
+          "text": "more carefully actually let",
+          "ids": [
+            6183,
+            15060,
+            3404,
+            1042
+          ],
+          "pieces": [
+            "more",
+            " carefully",
+            " actually",
+            " let"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " more carefully actually let",
+          "ids": [
+            777,
+            15060,
+            3404,
+            1042
+          ],
+          "pieces": [
+            " more",
+            " carefully",
+            " actually",
+            " let"
+          ],
+          "single_token": false
+        },
+        {
+          "text": "More carefully actually let",
+          "ids": [
+            7418,
+            15060,
+            3404,
+            1042
+          ],
+          "pieces": [
+            "More",
+            " carefully",
+            " actually",
+            " let"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " More carefully actually let",
+          "ids": [
+            4254,
+            15060,
+            3404,
+            1042
+          ],
+          "pieces": [
+            " More",
+            " carefully",
+            " actually",
+            " let"
+          ],
+          "single_token": false
+        }
+      ]
+    },
+    {
+      "kind": "phrase",
+      "surface": "carefully actually let me",
+      "support_problems": [
+        "h05",
+        "h07"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 0.75,
+      "mean_presence_short": 0.0,
+      "score": 0.75,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        "carefully actually let me",
+        "carefully actually let me"
+      ],
+      "encodings": [
+        {
+          "text": "carefully actually let me",
+          "ids": [
+            10193,
+            3518,
+            3404,
+            1042,
+            728
+          ],
+          "pieces": [
+            "care",
+            "fully",
+            " actually",
+            " let",
+            " me"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " carefully actually let me",
+          "ids": [
+            15060,
+            3404,
+            1042,
+            728
+          ],
+          "pieces": [
+            " carefully",
+            " actually",
+            " let",
+            " me"
+          ],
+          "single_token": false
+        },
+        {
+          "text": "Carefully actually let me",
+          "ids": [
+            30945,
+            3518,
+            3404,
+            1042,
+            728
+          ],
+          "pieces": [
+            "Care",
+            "fully",
+            " actually",
+            " let",
+            " me"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " Carefully actually let me",
+          "ids": [
+            10312,
+            3518,
+            3404,
+            1042,
+            728
+          ],
+          "pieces": [
+            " Care",
+            "fully",
+            " actually",
+            " let",
+            " me"
+          ],
+          "single_token": false
+        }
+      ]
+    },
+    {
+      "kind": "phrase",
+      "surface": "let me reconsider let",
+      "support_problems": [
+        "h05",
+        "h07"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 0.75,
+      "mean_presence_short": 0.0,
+      "score": 0.75,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        "let me reconsider let",
+        "let me reconsider let"
+      ],
+      "encodings": [
+        {
+          "text": "let me reconsider let",
+          "ids": [
+            1112,
+            728,
+            37781,
+            1042
+          ],
+          "pieces": [
+            "let",
+            " me",
+            " reconsider",
+            " let"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " let me reconsider let",
+          "ids": [
+            1042,
+            728,
+            37781,
+            1042
+          ],
+          "pieces": [
+            " let",
+            " me",
+            " reconsider",
+            " let"
+          ],
+          "single_token": false
+        },
+        {
+          "text": "Let me reconsider let",
+          "ids": [
+            9764,
+            728,
+            37781,
+            1042
+          ],
+          "pieces": [
+            "Let",
+            " me",
+            " reconsider",
+            " let"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " Let me reconsider let",
+          "ids": [
+            6558,
+            728,
+            37781,
+            1042
+          ],
+          "pieces": [
+            " Let",
+            " me",
+            " reconsider",
+            " let"
+          ],
+          "single_token": false
+        }
+      ]
+    },
+    {
+      "kind": "phrase",
+      "surface": "me reconsider let me",
+      "support_problems": [
+        "h05",
+        "h07"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 0.75,
+      "mean_presence_short": 0.0,
+      "score": 0.75,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        "me reconsider let me",
+        "me reconsider let me"
+      ],
+      "encodings": [
+        {
+          "text": "me reconsider let me",
+          "ids": [
+            2573,
+            37781,
+            1042,
+            728
+          ],
+          "pieces": [
+            "me",
+            " reconsider",
+            " let",
+            " me"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " me reconsider let me",
+          "ids": [
+            728,
+            37781,
+            1042,
+            728
+          ],
+          "pieces": [
+            " me",
+            " reconsider",
+            " let",
+            " me"
+          ],
+          "single_token": false
+        },
+        {
+          "text": "Me reconsider let me",
+          "ids": [
+            7575,
+            37781,
+            1042,
+            728
+          ],
+          "pieces": [
+            "Me",
+            " reconsider",
+            " let",
+            " me"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " Me reconsider let me",
+          "ids": [
+            2088,
+            37781,
+            1042,
+            728
+          ],
+          "pieces": [
+            " Me",
+            " reconsider",
+            " let",
+            " me"
+          ],
+          "single_token": false
+        }
+      ]
+    },
+    {
+      "kind": "phrase",
+      "surface": "a b let",
+      "support_problems": [
+        "h02",
+        "h03",
+        "h04"
+      ],
+      "support": 3,
+      "mean_presence_long_late": 0.6666666666666666,
+      "mean_presence_short": 0.0,
+      "score": 0.6666666666666666,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        "a b let",
+        "a b let"
+      ],
+      "encodings": [
+        {
+          "text": "a b let",
+          "ids": [
+            64,
+            292,
+            1042
+          ],
+          "pieces": [
+            "a",
+            " b",
+            " let"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " a b let",
+          "ids": [
+            264,
+            292,
+            1042
+          ],
+          "pieces": [
+            " a",
+            " b",
+            " let"
+          ],
+          "single_token": false
+        },
+        {
+          "text": "A b let",
+          "ids": [
+            32,
+            292,
+            1042
+          ],
+          "pieces": [
+            "A",
+            " b",
+            " let"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " A b let",
+          "ids": [
+            357,
+            292,
+            1042
+          ],
+          "pieces": [
+            " A",
+            " b",
+            " let"
+          ],
+          "single_token": false
+        }
+      ]
+    },
+    {
+      "kind": "phrase",
+      "surface": "b let me",
+      "support_problems": [
+        "h02",
+        "h03",
+        "h04"
+      ],
+      "support": 3,
+      "mean_presence_long_late": 0.6666666666666666,
+      "mean_presence_short": 0.0,
+      "score": 0.6666666666666666,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        "b let me",
+        "b let me"
+      ],
+      "encodings": [
+        {
+          "text": "b let me",
+          "ids": [
+            65,
+            1042,
+            728
+          ],
+          "pieces": [
+            "b",
+            " let",
+            " me"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " b let me",
+          "ids": [
+            292,
+            1042,
+            728
+          ],
+          "pieces": [
+            " b",
+            " let",
+            " me"
+          ],
+          "single_token": false
+        },
+        {
+          "text": "B let me",
+          "ids": [
+            33,
+            1042,
+            728
+          ],
+          "pieces": [
+            "B",
+            " let",
+            " me"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " B let me",
+          "ids": [
+            417,
+            1042,
+            728
+          ],
+          "pieces": [
+            " B",
+            " let",
+            " me"
+          ],
+          "single_token": false
+        }
+      ]
+    },
+    {
+      "kind": "phrase",
+      "surface": "a b let me",
+      "support_problems": [
+        "h02",
+        "h03",
+        "h04"
+      ],
+      "support": 3,
+      "mean_presence_long_late": 0.6666666666666666,
+      "mean_presence_short": 0.0,
+      "score": 0.6666666666666666,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        "a b let me",
+        "a b let me"
+      ],
+      "encodings": [
+        {
+          "text": "a b let me",
+          "ids": [
+            64,
+            292,
+            1042,
+            728
+          ],
+          "pieces": [
+            "a",
+            " b",
+            " let",
+            " me"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " a b let me",
+          "ids": [
+            264,
+            292,
+            1042,
+            728
+          ],
+          "pieces": [
+            " a",
+            " b",
+            " let",
+            " me"
+          ],
+          "single_token": false
+        },
+        {
+          "text": "A b let me",
+          "ids": [
+            32,
+            292,
+            1042,
+            728
+          ],
+          "pieces": [
+            "A",
+            " b",
+            " let",
+            " me"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " A b let me",
+          "ids": [
+            357,
+            292,
+            1042,
+            728
+          ],
+          "pieces": [
+            " A",
+            " b",
+            " let",
+            " me"
+          ],
+          "single_token": false
+        }
+      ]
+    },
+    {
+      "kind": "phrase",
+      "surface": "me reconsider the",
+      "support_problems": [
+        "h04",
+        "h05",
+        "h07"
+      ],
+      "support": 3,
+      "mean_presence_long_late": 0.6666666666666666,
+      "mean_presence_short": 0.0,
+      "score": 0.6666666666666666,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        "actor.  Let me reconsider. Actually let me reconsider the algebraic factorization to be safe.  3^",
+        "nts.  The answer is 615.  Actually, let me reconsider the problem statement: \"Find the sum of all"
+      ],
+      "encodings": [
+        {
+          "text": "me reconsider the",
+          "ids": [
+            2573,
+            37781,
+            279
+          ],
+          "pieces": [
+            "me",
+            " reconsider",
+            " the"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " me reconsider the",
+          "ids": [
+            728,
+            37781,
+            279
+          ],
+          "pieces": [
+            " me",
+            " reconsider",
+            " the"
+          ],
+          "single_token": false
+        },
+        {
+          "text": "Me reconsider the",
+          "ids": [
+            7575,
+            37781,
+            279
+          ],
+          "pieces": [
+            "Me",
+            " reconsider",
+            " the"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " Me reconsider the",
+          "ids": [
+            2088,
+            37781,
+            279
+          ],
+          "pieces": [
+            " Me",
+            " reconsider",
+            " the"
+          ],
+          "single_token": false
+        }
+      ]
+    },
+    {
+      "kind": "phrase",
+      "surface": "actually let me reconsider",
+      "support_problems": [
+        "h04",
+        "h05",
+        "h07"
+      ],
+      "support": 3,
+      "mean_presence_long_late": 0.6666666666666666,
+      "mean_presence_short": 0.0,
+      "score": 0.6666666666666666,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        "'t miss any factor.  Let me reconsider. Actually let me reconsider the algebraic factorization to be safe.",
+        "cutive squareful pairs more carefully.  Actually let me reconsider. Let me check all numbers from 1 to 100"
+      ],
+      "encodings": [
+        {
+          "text": "actually let me reconsider",
+          "ids": [
+            70546,
+            1042,
+            728,
+            37781
+          ],
+          "pieces": [
+            "actually",
+            " let",
+            " me",
+            " reconsider"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " actually let me reconsider",
+          "ids": [
+            3404,
+            1042,
+            728,
+            37781
+          ],
+          "pieces": [
+            " actually",
+            " let",
+            " me",
+            " reconsider"
+          ],
+          "single_token": false
+        },
+        {
+          "text": "Actually let me reconsider",
+          "ids": [
+            50821,
+            1042,
+            728,
+            37781
+          ],
+          "pieces": [
+            "Actually",
+            " let",
+            " me",
+            " reconsider"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " Actually let me reconsider",
+          "ids": [
+            32645,
+            1042,
+            728,
+            37781
+          ],
+          "pieces": [
+            " Actually",
+            " let",
+            " me",
+            " reconsider"
+          ],
+          "single_token": false
+        }
+      ]
+    },
+    {
+      "kind": "phrase",
+      "surface": "let me reconsider the",
+      "support_problems": [
+        "h04",
+        "h05",
+        "h07"
+      ],
+      "support": 3,
+      "mean_presence_long_late": 0.6666666666666666,
+      "mean_presence_short": 0.0,
+      "score": 0.6666666666666666,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        "ny factor.  Let me reconsider. Actually let me reconsider the algebraic factorization to be safe.  3^",
+        "lements.  The answer is 615.  Actually, let me reconsider the problem statement: \"Find the sum of all"
+      ],
+      "encodings": [
+        {
+          "text": "let me reconsider the",
+          "ids": [
+            1112,
+            728,
+            37781,
+            279
+          ],
+          "pieces": [
+            "let",
+            " me",
+            " reconsider",
+            " the"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " let me reconsider the",
+          "ids": [
+            1042,
+            728,
+            37781,
+            279
+          ],
+          "pieces": [
+            " let",
+            " me",
+            " reconsider",
+            " the"
+          ],
+          "single_token": false
+        },
+        {
+          "text": "Let me reconsider the",
+          "ids": [
+            9764,
+            728,
+            37781,
+            279
+          ],
+          "pieces": [
+            "Let",
+            " me",
+            " reconsider",
+            " the"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " Let me reconsider the",
+          "ids": [
+            6558,
+            728,
+            37781,
+            279
+          ],
+          "pieces": [
+            " Let",
+            " me",
+            " reconsider",
+            " the"
+          ],
+          "single_token": false
+        }
+      ]
+    },
+    {
+      "kind": "phrase",
+      "surface": "let me think",
+      "support_problems": [
+        "h03",
+        "h04",
+        "h07"
+      ],
+      "support": 3,
+      "mean_presence_long_late": 0.6666666666666666,
+      "mean_presence_short": 0.16666666666666666,
+      "score": 0.5,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        "big. - 2·5^4 = 2·625 = 1250, too big. - Let me think which combos give ~708-999.  2^a · 5^b:",
+        "e a nicer factorization?   3^12 + 2^12. Let me think about this using cyclotomic-style facto"
+      ],
+      "encodings": [
+        {
+          "text": "let me think",
+          "ids": [
+            1112,
+            728,
+            1683
+          ],
+          "pieces": [
+            "let",
+            " me",
+            " think"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " let me think",
+          "ids": [
+            1042,
+            728,
+            1683
+          ],
+          "pieces": [
+            " let",
+            " me",
+            " think"
+          ],
+          "single_token": false
+        },
+        {
+          "text": "Let me think",
+          "ids": [
+            9764,
+            728,
+            1683
+          ],
+          "pieces": [
+            "Let",
+            " me",
+            " think"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " Let me think",
+          "ids": [
+            6558,
+            728,
+            1683
+          ],
+          "pieces": [
+            " Let",
+            " me",
+            " think"
+          ],
+          "single_token": false
+        }
+      ]
+    },
+    {
+      "kind": "phrase",
+      "surface": "wait let me double",
+      "support_problems": [
+        "h04",
+        "h05",
+        "h07"
+      ],
+      "support": 3,
+      "mean_presence_long_late": 0.6666666666666666,
+      "mean_presence_short": 0.16666666666666666,
+      "score": 0.5,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        "wait let me double",
+        "wait let me double"
+      ],
+      "encodings": [
+        {
+          "text": "wait let me double",
+          "ids": [
+            11158,
+            1042,
+            728,
+            1923
+          ],
+          "pieces": [
+            "wait",
+            " let",
+            " me",
+            " double"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " wait let me double",
+          "ids": [
+            3655,
+            1042,
+            728,
+            1923
+          ],
+          "pieces": [
+            " wait",
+            " let",
+            " me",
+            " double"
+          ],
+          "single_token": false
+        },
+        {
+          "text": "Wait let me double",
+          "ids": [
+            13784,
+            1042,
+            728,
+            1923
+          ],
+          "pieces": [
+            "Wait",
+            " let",
+            " me",
+            " double"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " Wait let me double",
+          "ids": [
+            13428,
+            1042,
+            728,
+            1923
+          ],
+          "pieces": [
+            " Wait",
+            " let",
+            " me",
+            " double"
+          ],
+          "single_token": false
+        }
+      ]
+    },
+    {
+      "kind": "phrase",
+      "surface": "me verify using",
+      "support_problems": [
+        "e04",
+        "h04"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 0.5,
+      "mean_presence_short": 0.0,
+      "score": 0.5,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        "9, 12, 18, 36. That's 9 divisors.  Let me verify using the formula. 36 = 2² × 3². Number of di",
+        "the answer is 5521.  Alternatively, let me verify using the sum of squares factorization approa"
+      ],
+      "encodings": [
+        {
+          "text": "me verify using",
+          "ids": [
+            2573,
+            9845,
+            1608
+          ],
+          "pieces": [
+            "me",
+            " verify",
+            " using"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " me verify using",
+          "ids": [
+            728,
+            9845,
+            1608
+          ],
+          "pieces": [
+            " me",
+            " verify",
+            " using"
+          ],
+          "single_token": false
+        },
+        {
+          "text": "Me verify using",
+          "ids": [
+            7575,
+            9845,
+            1608
+          ],
+          "pieces": [
+            "Me",
+            " verify",
+            " using"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " Me verify using",
+          "ids": [
+            2088,
+            9845,
+            1608
+          ],
+          "pieces": [
+            " Me",
+            " verify",
+            " using"
+          ],
+          "single_token": false
+        }
+      ]
+    },
+    {
+      "kind": "phrase",
+      "surface": "verify using the",
+      "support_problems": [
+        "e04",
+        "h04"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 0.5,
+      "mean_presence_short": 0.0,
+      "score": 0.5,
+      "late_bias": 1.0,
+      "strict_pass": true,
+      "examples": [
+        " 12, 18, 36. That's 9 divisors.  Let me verify using the formula. 36 = 2² × 3². Number of diviso",
+        " answer is 5521.  Alternatively, let me verify using the sum of squares factorization approach t"
+      ],
+      "encodings": [
+        {
+          "text": "verify using the",
+          "ids": [
+            12089,
+            1608,
+            279
+          ],
+          "pieces": [
+            "verify",
+            " using",
+            " the"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " verify using the",
+          "ids": [
+            9845,
+            1608,
+            279
+          ],
+          "pieces": [
+            " verify",
+            " using",
+            " the"
+          ],
+          "single_token": false
+        },
+        {
+          "text": "Verify using the",
+          "ids": [
+            31547,
+            1608,
+            279
+          ],
+          "pieces": [
+            "Verify",
+            " using",
+            " the"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " Verify using the",
+          "ids": [
+            24624,
+            1608,
+            279
+          ],
+          "pieces": [
+            " Verify",
+            " using",
+            " the"
+          ],
+          "single_token": false
+        }
+      ]
+    }
+  ],
+  "reference": [
+    {
+      "phrase": "reconsider",
+      "support_problems": [
+        "h04",
+        "h05",
+        "h07"
+      ],
+      "support": 3,
+      "mean_presence_long_late": 1.0,
+      "mean_presence_short": 0.16666666666666666,
+      "score": 0.8333333333333334
+    },
+    {
+      "phrase": "make sure",
+      "support_problems": [
+        "h04",
+        "h05"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 0.75,
+      "mean_presence_short": 0.0,
+      "score": 0.75
+    },
+    {
+      "phrase": "hmm",
+      "support_problems": [
+        "h04",
+        "h05",
+        "h07"
+      ],
+      "support": 3,
+      "mean_presence_long_late": 0.8333333333333334,
+      "mean_presence_short": 0.3333333333333333,
+      "score": 0.5
+    },
+    {
+      "phrase": "alternatively",
+      "support_problems": [
+        "e06",
+        "h04"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 0.75,
+      "mean_presence_short": 0.25,
+      "score": 0.5
+    },
+    {
+      "phrase": "wait",
+      "support_problems": [
+        "h02",
+        "h03",
+        "h04",
+        "h05",
+        "h06",
+        "h07"
+      ],
+      "support": 6,
+      "mean_presence_long_late": 0.75,
+      "mean_presence_short": 0.5,
+      "score": 0.25
+    },
+    {
+      "phrase": "actually",
+      "support_problems": [
+        "h02",
+        "h03",
+        "h04",
+        "h05",
+        "h06",
+        "h07"
+      ],
+      "support": 6,
+      "mean_presence_long_late": 0.8333333333333334,
+      "mean_presence_short": 0.5833333333333334,
+      "score": 0.25
+    },
+    {
+      "phrase": "let me",
+      "support_problems": [
+        "e04",
+        "h02",
+        "h03",
+        "h04",
+        "h05",
+        "h06",
+        "h07"
+      ],
+      "support": 7,
+      "mean_presence_long_late": 0.9285714285714286,
+      "mean_presence_short": 0.8571428571428571,
+      "score": 0.07142857142857142
+    },
+    {
+      "phrase": "hold on",
+      "support_problems": [],
+      "support": 0,
+      "mean_presence_long_late": 0.0,
+      "mean_presence_short": 0.0,
+      "score": 0.0
+    },
+    {
+      "phrase": "check again",
+      "support_problems": [],
+      "support": 0,
+      "mean_presence_long_late": 0.0,
+      "mean_presence_short": 0.0,
+      "score": 0.0
+    },
+    {
+      "phrase": "another way",
+      "support_problems": [],
+      "support": 0,
+      "mean_presence_long_late": 0.0,
+      "mean_presence_short": 0.0,
+      "score": 0.0
+    },
+    {
+      "phrase": "等等",
+      "support_problems": [],
+      "support": 0,
+      "mean_presence_long_late": 0.0,
+      "mean_presence_short": 0.0,
+      "score": 0.0
+    },
+    {
+      "phrase": "不對",
+      "support_problems": [],
+      "support": 0,
+      "mean_presence_long_late": 0.0,
+      "mean_presence_short": 0.0,
+      "score": 0.0
+    },
+    {
+      "phrase": "再想",
+      "support_problems": [],
+      "support": 0,
+      "mean_presence_long_late": 0.0,
+      "mean_presence_short": 0.0,
+      "score": 0.0
+    },
+    {
+      "phrase": "再檢查",
+      "support_problems": [],
+      "support": 0,
+      "mean_presence_long_late": 0.0,
+      "mean_presence_short": 0.0,
+      "score": 0.0
+    },
+    {
+      "phrase": "換一種",
+      "support_problems": [],
+      "support": 0,
+      "mean_presence_long_late": 0.0,
+      "mean_presence_short": 0.0,
+      "score": 0.0
+    },
+    {
+      "phrase": "或者",
+      "support_problems": [],
+      "support": 0,
+      "mean_presence_long_late": 0.0,
+      "mean_presence_short": 0.0,
+      "score": 0.0
+    },
+    {
+      "phrase": "但是",
+      "support_problems": [],
+      "support": 0,
+      "mean_presence_long_late": 0.0,
+      "mean_presence_short": 0.0,
+      "score": 0.0
+    },
+    {
+      "phrase": "double-check",
+      "support_problems": [
+        "h02",
+        "h04",
+        "h05",
+        "h06",
+        "h07"
+      ],
+      "support": 5,
+      "mean_presence_long_late": 0.4,
+      "mean_presence_short": 0.6,
+      "score": -0.2
+    },
+    {
+      "phrase": "re-examine",
+      "support_problems": [
+        "h05",
+        "h07"
+      ],
+      "support": 2,
+      "mean_presence_long_late": 0.25,
+      "mean_presence_short": 0.5,
+      "score": -0.25
+    },
+    {
+      "phrase": "however",
+      "support_problems": [
+        "h04"
+      ],
+      "support": 1,
+      "mean_presence_long_late": 0.0,
+      "mean_presence_short": 0.5,
+      "score": -0.5
+    }
+  ]
+}

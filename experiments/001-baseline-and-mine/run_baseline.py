@@ -89,11 +89,16 @@ def call_one(
     experiment: str = "001-baseline",
     extra_body: dict | None = None,
     knob: dict | None = None,
+    system: str | None = None,
 ) -> dict:
     prompt = problem["question"] + suffix
+    messages = []
+    if system:
+        messages.append({"role": "system", "content": system})
+    messages.append({"role": "user", "content": prompt})
     body = {
         "model": "Ornith-1.5-9B",
-        "messages": [{"role": "user", "content": prompt}],
+        "messages": messages,
         "max_tokens": max_tokens,
         "seed": seed,
         "chat_template_kwargs": {"enable_thinking": True},

@@ -1,0 +1,369 @@
+{
+  "how_to_read": "Curated from the strict mine plus the reference table. Content words that passed the numeric filter are listed under rejected_statistical. This curation is a reading of the tables, recorded separately from mined_tokens.json.",
+  "first": [
+    {
+      "surface": "let me reconsider",
+      "why": "Long half of h04, h05, h07. Short-half presence 0.17. Distinctive token is reconsider.",
+      "distinctive_token_ids": [
+        37781
+      ],
+      "encodings": [
+        {
+          "text": "let me reconsider",
+          "ids": [
+            1112,
+            728,
+            37781
+          ],
+          "pieces": [
+            "let",
+            " me",
+            " reconsider"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " let me reconsider",
+          "ids": [
+            1042,
+            728,
+            37781
+          ],
+          "pieces": [
+            " let",
+            " me",
+            " reconsider"
+          ],
+          "single_token": false
+        },
+        {
+          "text": "Let me reconsider",
+          "ids": [
+            9764,
+            728,
+            37781
+          ],
+          "pieces": [
+            "Let",
+            " me",
+            " reconsider"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " Let me reconsider",
+          "ids": [
+            6558,
+            728,
+            37781
+          ],
+          "pieces": [
+            " Let",
+            " me",
+            " reconsider"
+          ],
+          "single_token": false
+        }
+      ]
+    },
+    {
+      "surface": "to be safe",
+      "why": "Late in the long traces of h04 and h05, absent from their short traces.",
+      "distinctive_token_ids": [],
+      "encodings": [
+        {
+          "text": "to be safe",
+          "ids": [
+            951,
+            381,
+            5902
+          ],
+          "pieces": [
+            "to",
+            " be",
+            " safe"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " to be safe",
+          "ids": [
+            310,
+            381,
+            5902
+          ],
+          "pieces": [
+            " to",
+            " be",
+            " safe"
+          ],
+          "single_token": false
+        },
+        {
+          "text": "To be safe",
+          "ids": [
+            1206,
+            381,
+            5902
+          ],
+          "pieces": [
+            "To",
+            " be",
+            " safe"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " To be safe",
+          "ids": [
+            1946,
+            381,
+            5902
+          ],
+          "pieces": [
+            " To",
+            " be",
+            " safe"
+          ],
+          "single_token": false
+        }
+      ]
+    },
+    {
+      "surface": "make sure",
+      "why": "Reference score 0.75 on 2 strict problems. The single token sure is too common to bias by itself.",
+      "distinctive_token_ids": [],
+      "encodings": [
+        {
+          "text": "make sure",
+          "ids": [
+            6711,
+            2617
+          ],
+          "pieces": [
+            "make",
+            " sure"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " make sure",
+          "ids": [
+            1236,
+            2617
+          ],
+          "pieces": [
+            " make",
+            " sure"
+          ],
+          "single_token": false
+        },
+        {
+          "text": "Make sure",
+          "ids": [
+            7825,
+            2617
+          ],
+          "pieces": [
+            "Make",
+            " sure"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " Make sure",
+          "ids": [
+            7170,
+            2617
+          ],
+          "pieces": [
+            " Make",
+            " sure"
+          ],
+          "single_token": false
+        }
+      ]
+    },
+    {
+      "surface": "let me recheck",
+      "why": "Long half of h05 and h07, absent from their short traces.",
+      "distinctive_token_ids": [],
+      "encodings": [
+        {
+          "text": "let me recheck",
+          "ids": [
+            1112,
+            728,
+            311,
+            1960
+          ],
+          "pieces": [
+            "let",
+            " me",
+            " re",
+            "check"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " let me recheck",
+          "ids": [
+            1042,
+            728,
+            311,
+            1960
+          ],
+          "pieces": [
+            " let",
+            " me",
+            " re",
+            "check"
+          ],
+          "single_token": false
+        },
+        {
+          "text": "Let me recheck",
+          "ids": [
+            9764,
+            728,
+            311,
+            1960
+          ],
+          "pieces": [
+            "Let",
+            " me",
+            " re",
+            "check"
+          ],
+          "single_token": false
+        },
+        {
+          "text": " Let me recheck",
+          "ids": [
+            6558,
+            728,
+            311,
+            1960
+          ],
+          "pieces": [
+            " Let",
+            " me",
+            " re",
+            "check"
+          ],
+          "single_token": false
+        }
+      ]
+    }
+  ],
+  "second": [
+    {
+      "surface": "Hmm",
+      "why": "Token filter passed on h04, h05, h07, but one inspected hit was mid-division, not only a late check.",
+      "distinctive_token_ids": [
+        77264,
+        85152
+      ],
+      "encodings": [
+        {
+          "text": "Hmm",
+          "ids": [
+            77264
+          ],
+          "pieces": [
+            "Hmm"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " Hmm",
+          "ids": [
+            85152
+          ],
+          "pieces": [
+            " Hmm"
+          ],
+          "single_token": true
+        }
+      ]
+    },
+    {
+      "surface": "Actually",
+      "why": "Five hard problems, short presence 0.20. Also a normal connector.",
+      "distinctive_token_ids": [
+        50821,
+        32645
+      ],
+      "encodings": [
+        {
+          "text": "Actually",
+          "ids": [
+            50821
+          ],
+          "pieces": [
+            "Actually"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " Actually",
+          "ids": [
+            32645
+          ],
+          "pieces": [
+            " Actually"
+          ],
+          "single_token": true
+        }
+      ]
+    },
+    {
+      "surface": "Alternatively",
+      "why": "Only two problems, and the inspected hit was an early change of method.",
+      "distinctive_token_ids": [
+        88842,
+        37201
+      ],
+      "encodings": [
+        {
+          "text": "Alternatively",
+          "ids": [
+            88842
+          ],
+          "pieces": [
+            "Alternatively"
+          ],
+          "single_token": true
+        },
+        {
+          "text": " Alternatively",
+          "ids": [
+            37201
+          ],
+          "pieces": [
+            " Alternatively"
+          ],
+          "single_token": true
+        }
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "surface": "wait",
+      "why": "In the strict problems the long-late presence is 0.75 and the short presence is 0.50. Short correct traces use it for real boundary checks."
+    },
+    {
+      "surface": "let me",
+      "why": "Present in 0.93 of long halves and 0.86 of short traces. Not a length marker."
+    },
+    {
+      "surface": "double-check",
+      "why": "More common in the short half (0.60) than the long half (0.40)."
+    },
+    {
+      "surface": "content words from the numeric filter",
+      "why": "strictly, range, excluded, formula, divides, valid, only, and the a/b/c grams passed because the two longest problems enumerate cases. They are not stall markers."
+    }
+  ]
+}

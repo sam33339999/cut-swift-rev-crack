@@ -1,0 +1,371 @@
+{
+  "easy": {
+    "basket": "easy",
+    "n_samples": 24,
+    "n_problems": 6,
+    "n_correct": 24,
+    "accuracy": 1.0,
+    "n_truncated": 0,
+    "n_transport_errors_excluded": 0,
+    "accuracy_bootstrap_95": {
+      "point": 1.0,
+      "low": 1.0,
+      "high": 1.0,
+      "n_problems": 6,
+      "n_samples": 24
+    },
+    "reasoning_tokens_mean_bootstrap_95": {
+      "point": 44.375,
+      "low": 30.75,
+      "high": 57.75,
+      "n_problems": 6,
+      "n_samples": 24
+    },
+    "reasoning_tokens_median_bootstrap_95": {
+      "point": 37.0,
+      "low": 27.5,
+      "high": 58.0,
+      "n_problems": 6,
+      "n_samples": 24
+    },
+    "problems": [
+      {
+        "problem_id": "e01",
+        "n": 4,
+        "n_correct": 4,
+        "n_truncated": 0,
+        "extracted": [
+          "391",
+          "391",
+          "391",
+          "391"
+        ],
+        "gold": "391",
+        "reasoning_tokens": [
+          12,
+          37,
+          12,
+          37
+        ],
+        "correct_reasoning_tokens_median": 24.5,
+        "gold_in_reasoning_when_wrong": 0
+      },
+      {
+        "problem_id": "e02",
+        "n": 4,
+        "n_correct": 4,
+        "n_truncated": 0,
+        "extracted": [
+          "1024",
+          "1024",
+          "1024",
+          "1024"
+        ],
+        "gold": "1024",
+        "reasoning_tokens": [
+          26,
+          12,
+          28,
+          26
+        ],
+        "correct_reasoning_tokens_median": 26.0,
+        "gold_in_reasoning_when_wrong": 0
+      },
+      {
+        "problem_id": "e03",
+        "n": 4,
+        "n_correct": 4,
+        "n_truncated": 0,
+        "extracted": [
+          "6",
+          "6",
+          "6",
+          "6"
+        ],
+        "gold": "6",
+        "reasoning_tokens": [
+          59,
+          49,
+          57,
+          55
+        ],
+        "correct_reasoning_tokens_median": 56.0,
+        "gold_in_reasoning_when_wrong": 0
+      },
+      {
+        "problem_id": "e04",
+        "n": 4,
+        "n_correct": 4,
+        "n_truncated": 0,
+        "extracted": [
+          "9",
+          "9",
+          "9",
+          "9"
+        ],
+        "gold": "9",
+        "reasoning_tokens": [
+          84,
+          29,
+          29,
+          120
+        ],
+        "correct_reasoning_tokens_median": 56.5,
+        "gold_in_reasoning_when_wrong": 0
+      },
+      {
+        "problem_id": "e05",
+        "n": 4,
+        "n_correct": 4,
+        "n_truncated": 0,
+        "extracted": [
+          "5050",
+          "5050",
+          "5050",
+          "5050"
+        ],
+        "gold": "5050",
+        "reasoning_tokens": [
+          42,
+          31,
+          38,
+          33
+        ],
+        "correct_reasoning_tokens_median": 35.5,
+        "gold_in_reasoning_when_wrong": 0
+      },
+      {
+        "problem_id": "e06",
+        "n": 4,
+        "n_correct": 4,
+        "n_truncated": 0,
+        "extracted": [
+          "3",
+          "3",
+          "3",
+          "3"
+        ],
+        "gold": "3",
+        "reasoning_tokens": [
+          81,
+          71,
+          27,
+          70
+        ],
+        "correct_reasoning_tokens_median": 70.5,
+        "gold_in_reasoning_when_wrong": 0
+      }
+    ]
+  },
+  "hard": {
+    "basket": "hard",
+    "n_samples": 32,
+    "n_problems": 8,
+    "n_correct": 30,
+    "accuracy": 0.9375,
+    "n_truncated": 1,
+    "n_transport_errors_excluded": 0,
+    "accuracy_bootstrap_95": {
+      "point": 0.9375,
+      "low": 0.875,
+      "high": 1.0,
+      "n_problems": 8,
+      "n_samples": 32
+    },
+    "reasoning_tokens_mean_bootstrap_95": {
+      "point": 1621.1875,
+      "low": 869.125,
+      "high": 2729.96875,
+      "n_problems": 8,
+      "n_samples": 32
+    },
+    "reasoning_tokens_median_bootstrap_95": {
+      "point": 888.5,
+      "low": 717.0,
+      "high": 2075.0,
+      "n_problems": 8,
+      "n_samples": 32
+    },
+    "problems": [
+      {
+        "problem_id": "h01",
+        "n": 4,
+        "n_correct": 4,
+        "n_truncated": 0,
+        "extracted": [
+          "405",
+          "405",
+          "405",
+          "405"
+        ],
+        "gold": "405",
+        "reasoning_tokens": [
+          814,
+          782,
+          764,
+          714
+        ],
+        "correct_reasoning_tokens_median": 773.0,
+        "gold_in_reasoning_when_wrong": 0
+      },
+      {
+        "problem_id": "h02",
+        "n": 4,
+        "n_correct": 4,
+        "n_truncated": 0,
+        "extracted": [
+          "401",
+          "401",
+          "401",
+          "401"
+        ],
+        "gold": "401",
+        "reasoning_tokens": [
+          953,
+          533,
+          530,
+          703
+        ],
+        "correct_reasoning_tokens_median": 618.0,
+        "gold_in_reasoning_when_wrong": 0
+      },
+      {
+        "problem_id": "h03",
+        "n": 4,
+        "n_correct": 3,
+        "n_truncated": 0,
+        "extracted": [
+          "31875000",
+          "318750000",
+          "31875000",
+          "31875000"
+        ],
+        "gold": "31875000",
+        "reasoning_tokens": [
+          173,
+          189,
+          2486,
+          501
+        ],
+        "correct_reasoning_tokens_median": 501,
+        "gold_in_reasoning_when_wrong": 0
+      },
+      {
+        "problem_id": "h04",
+        "n": 4,
+        "n_correct": 4,
+        "n_truncated": 0,
+        "extracted": [
+          "5521",
+          "5521",
+          "5521",
+          "5521"
+        ],
+        "gold": "5521",
+        "reasoning_tokens": [
+          2364,
+          2075,
+          2778,
+          1874
+        ],
+        "correct_reasoning_tokens_median": 2219.5,
+        "gold_in_reasoning_when_wrong": 0
+      },
+      {
+        "problem_id": "h05",
+        "n": 4,
+        "n_correct": 3,
+        "n_truncated": 1,
+        "extracted": [
+          "615",
+          "615",
+          null,
+          "615"
+        ],
+        "gold": "615",
+        "reasoning_tokens": [
+          2787,
+          6829,
+          8046,
+          3343
+        ],
+        "correct_reasoning_tokens_median": 3343,
+        "gold_in_reasoning_when_wrong": 1
+      },
+      {
+        "problem_id": "h06",
+        "n": 4,
+        "n_correct": 4,
+        "n_truncated": 0,
+        "extracted": [
+          "376",
+          "376",
+          "376",
+          "376"
+        ],
+        "gold": "376",
+        "reasoning_tokens": [
+          720,
+          390,
+          1352,
+          849
+        ],
+        "correct_reasoning_tokens_median": 784.5,
+        "gold_in_reasoning_when_wrong": 0
+      },
+      {
+        "problem_id": "h07",
+        "n": 4,
+        "n_correct": 4,
+        "n_truncated": 0,
+        "extracted": [
+          "2",
+          "2",
+          "2",
+          "2"
+        ],
+        "gold": "2",
+        "reasoning_tokens": [
+          2039,
+          1364,
+          1083,
+          1625
+        ],
+        "correct_reasoning_tokens_median": 1494.5,
+        "gold_in_reasoning_when_wrong": 0
+      },
+      {
+        "problem_id": "h08",
+        "n": 4,
+        "n_correct": 4,
+        "n_truncated": 0,
+        "extracted": [
+          "1060",
+          "1060",
+          "1060",
+          "1060"
+        ],
+        "gold": "1060",
+        "reasoning_tokens": [
+          814,
+          928,
+          647,
+          829
+        ],
+        "correct_reasoning_tokens_median": 821.5,
+        "gold_in_reasoning_when_wrong": 0
+      }
+    ]
+  },
+  "meta": {
+    "n_rows": 56,
+    "n_ok": 56,
+    "n_errors": 0,
+    "length_agreement": {
+      "n": 56,
+      "median_tokenizer_over_api": 1.0,
+      "min": 0.9998535656757944,
+      "max": 1.0
+    }
+  }
+}
