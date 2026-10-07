@@ -1,0 +1,161 @@
+{
+  "experiment": "002-phrase-penalty",
+  "knob": {
+    "mechanism": "vllm bad_words",
+    "rule": "The completing token of each first-tier phrase is set to logit -inf only after that phrase's preceding tokens. A leading-space sequence is included when it changes the first token. Sentence-start capitals are separate strings.",
+    "phrases": [
+      "let me reconsider",
+      "Let me reconsider",
+      "to be safe",
+      "To be safe",
+      "make sure",
+      "Make sure",
+      "let me recheck",
+      "Let me recheck"
+    ],
+    "token_sequences": [
+      [
+        1112,
+        728,
+        37781
+      ],
+      [
+        1042,
+        728,
+        37781
+      ],
+      [
+        9764,
+        728,
+        37781
+      ],
+      [
+        6558,
+        728,
+        37781
+      ],
+      [
+        951,
+        381,
+        5902
+      ],
+      [
+        310,
+        381,
+        5902
+      ],
+      [
+        1206,
+        381,
+        5902
+      ],
+      [
+        1946,
+        381,
+        5902
+      ],
+      [
+        6711,
+        2617
+      ],
+      [
+        1236,
+        2617
+      ],
+      [
+        7825,
+        2617
+      ],
+      [
+        7170,
+        2617
+      ],
+      [
+        1112,
+        728,
+        311,
+        1960
+      ],
+      [
+        1042,
+        728,
+        311,
+        1960
+      ],
+      [
+        9764,
+        728,
+        311,
+        1960
+      ],
+      [
+        6558,
+        728,
+        311,
+        1960
+      ]
+    ]
+  },
+  "reload": {
+    "ready_at": "2026-10-07T16:22:12.151451+00:00",
+    "model": "Ornith-1.5-9B",
+    "max_model_len": 20480,
+    "pid": 30447,
+    "stopped_and_reloaded_by": "experiments/002-phrase-penalty/run_round.py"
+  },
+  "easy": {
+    "basket": "easy",
+    "n": 24,
+    "n_correct": 24,
+    "n_truncated": 0,
+    "accuracy": 1.0,
+    "reasoning_mean": 44.375,
+    "reasoning_median": 37.0,
+    "n_lengths": 24
+  },
+  "hard": {
+    "basket": "hard",
+    "n": 32,
+    "n_correct": 28,
+    "n_truncated": 3,
+    "accuracy": 0.875,
+    "reasoning_mean": 1856.90625,
+    "reasoning_median": 829.5,
+    "n_lengths": 32
+  },
+  "baseline_easy": {
+    "basket": "easy",
+    "n": 24,
+    "n_correct": 24,
+    "n_truncated": 0,
+    "accuracy": 1.0,
+    "reasoning_mean": 44.375,
+    "reasoning_median": 37.0,
+    "n_lengths": 24
+  },
+  "baseline_hard": {
+    "basket": "hard",
+    "n": 32,
+    "n_correct": 30,
+    "n_truncated": 1,
+    "accuracy": 0.9375,
+    "reasoning_mean": 1621.1875,
+    "reasoning_median": 888.5,
+    "n_lengths": 32
+  },
+  "delta_easy": {
+    "n_correct": 0,
+    "n_truncated": 0,
+    "reasoning_mean": 0.0,
+    "reasoning_median": 0.0
+  },
+  "delta_hard": {
+    "n_correct": -2,
+    "n_truncated": 2,
+    "reasoning_mean": 235.71875,
+    "reasoning_median": -59.0
+  },
+  "judgement": "難題中位數有變短，但幅度小於 15%。不把這輪記成有效縮短。",
+  "n_rows": 56,
+  "n_errors": 0
+}
