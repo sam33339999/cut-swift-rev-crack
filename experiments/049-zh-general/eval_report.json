@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "id": "s1",
+      "size": "small",
+      "turns": [
+        {
+          "reasoning": "The user is asking in Traditional Chinese: \"When is my country's National Day? One sentence in Traditional Chinese.\"\n\nThe user writes in Traditional Chinese, so I should respond in Traditional Chinese as well.\n\nThe question asks about \"我國國慶日\" (my country's National Day). Since the user wrote in Traditional Chinese, this likely refers to Taiwan (中華民國). Taiwan's National Day is October 10th (雙十節).\n\nHowever, this could also refer to other regions. Let me think about this:\n- If Traditional Chinese, likely",
+          "content": "",
+          "truncated": false,
+          "reasoning_tokens": null,
+          "finish_reason": null
+        }
+      ],
+      "ok": false
+    }
+  ],
+  "discarded": true
+}

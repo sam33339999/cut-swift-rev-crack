@@ -87,3 +87,8 @@
   - 驗收：`experiments/045-dual-reward/` 寫明訓練範圍、兩格的答對和思考中位數，`COMPARE.md` 補上這兩列。用 `judgement` 寫結論。沒達標就寫沒達標。
   - 結果：2026-10-08。第一次 LoRA 在 `e01` 陷入 `ANS` 重複，不記成有效縮短。說明在 `experiments/045-dual-reward/FAILURE.md`。
   - 重跑：2026-10-08。優勢只在思考區，學習率 1e-5，一輪，KL 0.1。探針每 30 秒檢查，沒有丟棄。難題 31/32，思考中位數 560.5。開發集上達標。簡單題 24/24，中位數 31。`experiments/045-dual-reward/retry/`
+
+- [x] 049 通用繁體、按題目大小縮短思考
+  - 目標是通用繁體回答、思考短、第二輪仍有正文。語料用 `yentinglin/twllm-data`，不是數學題。
+  - 結果：2026-10-08。沒有通過。第一題「國慶日」停在英文思考區，可見回答是空的。事後再測，小題和第二輪都不比基座好。說明在 `experiments/049-zh-general/FAILURE.md`。
+  - 048 是中途發現仍在練繁體數學而停掉的，沒有 adapter。`experiments/048-zh-short/STOPPED.md`。

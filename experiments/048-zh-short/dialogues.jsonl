@@ -1,0 +1,16 @@
+{"messages":[{"role":"user","content":"用三句話說明 Redis 和 Memcached 怎麼選。"},{"role":"assistant","content":"要持久化、多種資料結構或主從複寫時選 Redis。只做單純的記憶體鍵值快取、而且希望操作很單純時選 Memcached。需要處理快取失效、過期和多租戶隔離時，用 Redis 比較好掌控。"}]}
+{"messages":[{"role":"user","content":"用三句話說明 Redis 和 Memcached 怎麼選。"},{"role":"assistant","content":"要持久化、多種資料結構或主從複寫時選 Redis。只做單純的記憶體鍵值快取、而且希望操作很單純時選 Memcached。需要處理快取失效、過期和多租戶隔離時，用 Redis 比較好掌控。"},{"role":"user","content":"那快取失效策略你會怎麼做？"},{"role":"assistant","content":"讀多寫少用 cache-aside：沒中就讀資料庫再寫回，並設 TTL。資料必須準、寫入不多時用 write-through，寫入當下同時更新快取。熱點鍵要加互斥或單飛，避免同時失效造成打爆資料庫。"}]}
+{"messages":[{"role":"user","content":"Kafka 和 RabbitMQ 怎麼選？請用繁體中文，三句話。"},{"role":"assistant","content":"要保留事件、重播和多個獨立消費群組時選 Kafka。工作排程、每則訊息處理完就刪掉、而且要複雜路由時選 RabbitMQ。先看你要的是日誌型串流，還是工作佇列。"}]}
+{"messages":[{"role":"user","content":"SQL 和 NoSQL 的取捨，用繁體中文講三個判斷點。"},{"role":"assistant","content":"交易、關聯和約束很重要時用 SQL。文件形狀常改、或要水平擴充大量讀寫時再看 NoSQL。不要因為流量還小就先拆掉交易。"}]}
+{"messages":[{"role":"user","content":"多租戶架構怎麼隔離資料？用繁體中文，不要展開太長。"},{"role":"assistant","content":"租戶少、合規要求高，用獨立資料庫。租戶多而查詢模式相近，用同一庫加 tenant_id，並在每一個查詢強制帶上。快取鍵、佇列和檔案路徑也要帶租戶，避免串資料。"}]}
+{"messages":[{"role":"user","content":"全域 ID 怎麼配？給一個繁體中文的短答案。"},{"role":"assistant","content":"單機用資料庫序號就夠。多台寫入用雪花演算法或資料庫號段，避免各節點自己從 1 開始。不要用沒協調過的隨機數當主鍵。"}]}
+{"messages":[{"role":"user","content":"系統突然變慢，你會先看哪三件事？繁體中文。"},{"role":"assistant","content":"先看錯誤率和延遲是從哪一個服務開始升的。再看資料庫慢查詢、連線池和 CPU。最後才看最近的部署和設定變更。"}]}
+{"messages":[{"role":"user","content":"請用繁體中文解釋什麼是冪等。"},{"role":"assistant","content":"同一個請求做一次和做很多次，系統狀態都一樣，就叫冪等。付款和建立訂單要靠冪等鍵擋住重送。讀取本身通常已經是冪等的。"}]}
+{"messages":[{"role":"user","content":"今天台北天氣怎麼問才不會得到過期資料？一句話。"},{"role":"assistant","content":"問的時候帶上現在的日期和城市，並要求來源時間，不要沿用昨天的快取。"}]}
+{"messages":[{"role":"user","content":"把「請稍等，我再確認一下」改成更短的繁體中文。"},{"role":"assistant","content":"我確認一下。"}]}
+{"messages":[{"role":"user","content":"17 乘以 23 是多少？請用繁體中文回答。"},{"role":"assistant","content":"17 乘以 23 是 391。"}]}
+{"messages":[{"role":"user","content":"一個行程佔滿顯示卡，第二個模型載不進去，你會怎麼做？繁體中文，兩句。"},{"role":"assistant","content":"先停掉佔用顯示卡的服務，確認記憶體已經釋放出來。再啟動下一個模型，不要兩個同時載。"}]}
+{"messages":[{"role":"user","content":"什麼是留出題？用繁體中文一句話。"},{"role":"assistant","content":"留出題是訓練和調參時都不拿來改設定、只在最後用來確認結果的題目。"}]}
+{"messages":[{"role":"user","content":"使用者說第二題開始胡言亂語，你會先查什麼？繁體中文。"},{"role":"assistant","content":"先確認第二題打到的是哪一個模型名稱，以及第一題的回答有沒有被原樣送回去。再看生成有沒有停在思考區、或一直重複同一小段文字。"}]}
+{"messages":[{"role":"user","content":"請列出三個台灣常見的支付名詞，只要名詞。"},{"role":"assistant","content":"街口支付、Line Pay、信用卡。"}]}
+{"messages":[{"role":"user","content":"用繁體中文說明為什麼訓練資料不能用評分題。"},{"role":"assistant","content":"評分題如果進了訓練，模型只是記住這些題，不能拿來判斷有沒有真的變短或變準。"}]}

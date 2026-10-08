@@ -1,0 +1,10 @@
+{
+  "updates": 125,
+  "skipped": 204,
+  "rows": 329,
+  "epochs": 1,
+  "lr": 1e-05,
+  "kl_coef": 0.1,
+  "grad_clip": 1.0,
+  "adapter": "/content/cut-swift-rev-crack/experiments/049-zh-general/adapter"
+}
