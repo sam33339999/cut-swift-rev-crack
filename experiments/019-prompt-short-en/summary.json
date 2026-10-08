@@ -1,0 +1,71 @@
+{
+  "experiment": "019-prompt-short-en",
+  "knob": {
+    "method": "7，對應第 1 條",
+    "rule": "第 7 條的英文版，對應 004。系統提示只換成英文那一句，中文版不重跑。",
+    "system": "Keep the reasoning short. Stop once you think of the answer.",
+    "extra_body": {}
+  },
+  "reload": {
+    "ready_at": "2026-10-08T01:09:40.470153+00:00",
+    "model": "Ornith-1.5-9B",
+    "max_model_len": 20480,
+    "pid": 39280,
+    "stopped_and_reloaded_by": "experiments/next_rounds.py"
+  },
+  "easy": {
+    "basket": "easy",
+    "n": 24,
+    "n_correct": 21,
+    "n_truncated": 0,
+    "accuracy": 0.875,
+    "reasoning_mean": 36.708333333333336,
+    "reasoning_median": 36.0,
+    "n_lengths": 24
+  },
+  "hard": {
+    "basket": "hard",
+    "n": 32,
+    "n_correct": 29,
+    "n_truncated": 0,
+    "accuracy": 0.90625,
+    "reasoning_mean": 1113.71875,
+    "reasoning_median": 522.0,
+    "n_lengths": 32
+  },
+  "baseline_easy": {
+    "basket": "easy",
+    "n": 24,
+    "n_correct": 24,
+    "n_truncated": 0,
+    "accuracy": 1.0,
+    "reasoning_mean": 44.375,
+    "reasoning_median": 37.0,
+    "n_lengths": 24
+  },
+  "baseline_hard": {
+    "basket": "hard",
+    "n": 32,
+    "n_correct": 30,
+    "n_truncated": 1,
+    "accuracy": 0.9375,
+    "reasoning_mean": 1621.1875,
+    "reasoning_median": 888.5,
+    "n_lengths": 32
+  },
+  "delta_easy": {
+    "n_correct": -3,
+    "n_truncated": 0,
+    "reasoning_mean": -7.666666666666664,
+    "reasoning_median": -1.0
+  },
+  "delta_hard": {
+    "n_correct": -1,
+    "n_truncated": -1,
+    "reasoning_mean": -507.46875,
+    "reasoning_median": -366.5
+  },
+  "judgement": "難題思考中位數至少少了 15%，答對筆數沒有少超過 1。這是開發集上的一次比較，不是測試集結論。",
+  "n_rows": 56,
+  "n_errors": 0
+}

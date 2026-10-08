@@ -40,6 +40,9 @@ PROMPT_CHAIN_OF_DRAFT = "逐步推理，每一步最多五個詞。"
 PROMPT_BAN_STALL = "不要寫 wait、alternatively、hmm、再檢查一次、再想一次。"
 PROMPT_EASY = "用短推理"
 PROMPT_HARD = "可以想完，但不要重複檢查。"
+PROMPT_SHORT_EN = "Keep the reasoning short. Stop once you think of the answer."
+PROMPT_BAN_STALL_EN = "Do not write wait, alternatively, hmm, check again, or think again."
+PROMPT_ANSWER_FIRST_EN = "Give the answer first, then verify it in at most three sentences."
 TEXT_BUDGETS = (256, 512, 1024, 2048)
 NOWAIT_WORDS = ("wait", "Wait", "hmm", "Hmm", "alternatively", "Alternatively")
 COMPARE_PATH = ROOT / "experiments" / "COMPARE.md"
@@ -151,6 +154,30 @@ def round_specs(tokenizer) -> list[dict]:
             "system_by_basket": {"easy": PROMPT_EASY, "hard": PROMPT_HARD},
             "extra_body": {},
             "knob_label": "簡單題「用短推理」，難題「可以想完，但不要重複檢查。」",
+        },
+        {
+            "name": "019-prompt-short-en",
+            "method": "7，對應第 1 條",
+            "rule": "第 7 條的英文版，對應 004。系統提示只換成英文那一句，中文版不重跑。",
+            "system": PROMPT_SHORT_EN,
+            "extra_body": {},
+            "knob_label": "英文系統提示「Keep the reasoning short. Stop once you think of the answer.」",
+        },
+        {
+            "name": "020-ban-stall-en",
+            "method": "7，對應第 2 條",
+            "rule": "第 7 條的英文版，對應 013。系統提示只換成英文那一句。",
+            "system": PROMPT_BAN_STALL_EN,
+            "extra_body": {},
+            "knob_label": "英文系統提示「Do not write wait, alternatively, hmm, check again, or think again.」",
+        },
+        {
+            "name": "021-answer-first-en",
+            "method": "7，對應第 3 條",
+            "rule": "第 7 條的英文版，對應 009。系統提示只換成英文那一句。",
+            "system": PROMPT_ANSWER_FIRST_EN,
+            "extra_body": {},
+            "knob_label": "英文系統提示「Give the answer first, then verify it in at most three sentences.」",
         },
     ]
 

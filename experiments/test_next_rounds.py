@@ -5,11 +5,14 @@ import unittest
 from experiments.next_rounds import (
     NOWAIT_WORDS,
     PROMPT_ANSWER_FIRST,
+    PROMPT_ANSWER_FIRST_EN,
     PROMPT_BAN_STALL,
+    PROMPT_BAN_STALL_EN,
     PROMPT_CHAIN_OF_DRAFT,
     PROMPT_EASY,
     PROMPT_HARD,
     PROMPT_SHORT,
+    PROMPT_SHORT_EN,
     baseline_runner,
     compact_rows,
     nowait_logit_bias,
@@ -73,6 +76,9 @@ class NextRoundsTest(unittest.TestCase):
                 "016-text-budget-1024",
                 "017-text-budget-2048",
                 "018-budget-by-difficulty",
+                "019-prompt-short-en",
+                "020-ban-stall-en",
+                "021-answer-first-en",
             ],
         )
         no_thinking = specs[0]["extra_body"]["chat_template_kwargs"]["enable_thinking"]
@@ -109,6 +115,14 @@ class NextRoundsTest(unittest.TestCase):
         by_basket = specs[13]["system_by_basket"]
         self.assertEqual(by_basket, {"easy": PROMPT_EASY, "hard": PROMPT_HARD})
         self.assertNotIn("thinking_token_budget", budgets[0]["extra_body"])
+        english = specs[14:]
+        self.assertEqual(
+            [spec["system"] for spec in english],
+            [PROMPT_SHORT_EN, PROMPT_BAN_STALL_EN, PROMPT_ANSWER_FIRST_EN],
+        )
+        self.assertTrue(all(spec["extra_body"] == {} for spec in english))
+        self.assertNotEqual(english[0]["system"], PROMPT_SHORT)
+        self.assertNotEqual(english[2]["system"], PROMPT_ANSWER_FIRST)
 
     def test_budget_note_stays_before_the_answer_suffix(self):
         prompt = baseline_runner.user_prompt("What is 2+2?", "\n\nANSWER", "思考不得超過 256 個 token。")

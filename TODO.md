@@ -56,3 +56,12 @@
   - 簡單題系統提示「用短推理」，難題系統提示「可以想完，但不要重複檢查。」
   - 驗收：`experiments/018-budget-by-difficulty/` 同上，`COMPARE.md` 補上這一列。
   - 結果：2026-10-08，難題 31/32，思考中位數 703.0。開發集上達標。簡單題 24/24，中位數 56.5。`experiments/018-budget-by-difficulty/`
+
+- [x] 019–021 中文提示的英文版（第 7 條）
+  - 只把第 1、2、3 條換成英文。中文版 004、013、009 不重跑。其他解碼和 001 相同。
+  - 019：「Keep the reasoning short. Stop once you think of the answer.」
+  - 020：「Do not write wait, alternatively, hmm, check again, or think again.」
+  - 021：「Give the answer first, then verify it in at most three sentences.」
+  - 開發集 14 題、seed 101–104。每一輪抽樣前重載。
+  - 驗收：三個目錄各有 `RESULTS.md`、`summary.json`、56 筆且沒有傳輸錯誤。`COMPARE.md` 各補一列。用 `judgement` 寫結論，沒達標就寫沒達標。這仍是開發集。
+  - 結果：2026-10-08。019 難題 29/32，中位數 522.0，開發集上達標，簡單題 21/24。020 難題 31/32，中位數 682.0，開發集上達標。021 難題 27/32，中位數 597.5，沒有達標。
