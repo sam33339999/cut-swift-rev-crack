@@ -43,6 +43,11 @@ PROMPT_HARD = "可以想完，但不要重複檢查。"
 PROMPT_SHORT_EN = "Keep the reasoning short. Stop once you think of the answer."
 PROMPT_BAN_STALL_EN = "Do not write wait, alternatively, hmm, check again, or think again."
 PROMPT_ANSWER_FIRST_EN = "Give the answer first, then verify it in at most three sentences."
+QWEN38_LOW_SENTENCE = (
+    "Reasoning effort is set to low. Keep your thinking brief and focused, "
+    "moving directly to the conclusion without unnecessary elaboration."
+)
+QWEN38_LOW_TEMPLATE = ROOT / "experiments" / "022-qwen38-low-template" / "chat_template.jinja"
 TEXT_BUDGETS = (256, 512, 1024, 2048)
 NOWAIT_WORDS = ("wait", "Wait", "hmm", "Hmm", "alternatively", "Alternatively")
 COMPARE_PATH = ROOT / "experiments" / "COMPARE.md"
@@ -178,6 +183,18 @@ def round_specs(tokenizer) -> list[dict]:
             "system": PROMPT_ANSWER_FIRST_EN,
             "extra_body": {},
             "knob_label": "英文系統提示「Give the answer first, then verify it in at most three sentences.」",
+        },
+        {
+            "name": "022-qwen38-low-template",
+            "method": "模板，不在第 1–62 條",
+            "rule": (
+                "只換 chat template。在 Ornith 原模板的無工具路徑加上 Qwen3.8 的 low 那一句。"
+                "思考預填仍是 <think>。沒有系統提示，解碼和 001 相同。"
+            ),
+            "system": None,
+            "extra_body": {},
+            "chat_template": str(QWEN38_LOW_TEMPLATE),
+            "knob_label": "Qwen3.8 low 模板句",
         },
     ]
 
@@ -507,6 +524,7 @@ def run_all(workers: int = 4, timeout: int = 600, only: list[str] | None = None)
 
     # Prompt rounds must not inherit a logits processor from an earlier shell.
     os.environ.pop("VLLM_LOGITS_PROCESSORS", None)
+    os.environ.pop("CHAT_TEMPLATE", None)
     tokenizer = AutoTokenizer.from_pretrained(MODEL, trust_remote_code=True)
     specs = round_specs(tokenizer)
     if only:
@@ -522,6 +540,10 @@ def run_all(workers: int = 4, timeout: int = 600, only: list[str] | None = None)
         if _complete(existing):
             print(f"{spec['name']} already complete, skip", flush=True)
             continue
+        if spec.get("chat_template"):
+            os.environ["CHAT_TEMPLATE"] = spec["chat_template"]
+        else:
+            os.environ.pop("CHAT_TEMPLATE", None)
         body, ready_at, pid = reload_server(round_dir / "logs" / "vllm.log")
         payload = json.loads(body)
         model = payload["data"][0]

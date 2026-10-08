@@ -79,6 +79,7 @@ class NextRoundsTest(unittest.TestCase):
                 "019-prompt-short-en",
                 "020-ban-stall-en",
                 "021-answer-first-en",
+                "022-qwen38-low-template",
             ],
         )
         no_thinking = specs[0]["extra_body"]["chat_template_kwargs"]["enable_thinking"]
@@ -115,7 +116,12 @@ class NextRoundsTest(unittest.TestCase):
         by_basket = specs[13]["system_by_basket"]
         self.assertEqual(by_basket, {"easy": PROMPT_EASY, "hard": PROMPT_HARD})
         self.assertNotIn("thinking_token_budget", budgets[0]["extra_body"])
-        english = specs[14:]
+        by_name = {spec["name"]: spec for spec in specs}
+        english = [
+            by_name["019-prompt-short-en"],
+            by_name["020-ban-stall-en"],
+            by_name["021-answer-first-en"],
+        ]
         self.assertEqual(
             [spec["system"] for spec in english],
             [PROMPT_SHORT_EN, PROMPT_BAN_STALL_EN, PROMPT_ANSWER_FIRST_EN],
@@ -123,6 +129,10 @@ class NextRoundsTest(unittest.TestCase):
         self.assertTrue(all(spec["extra_body"] == {} for spec in english))
         self.assertNotEqual(english[0]["system"], PROMPT_SHORT)
         self.assertNotEqual(english[2]["system"], PROMPT_ANSWER_FIRST)
+        low = by_name["022-qwen38-low-template"]
+        self.assertIsNone(low["system"])
+        self.assertEqual(low["extra_body"], {})
+        self.assertTrue(str(low["chat_template"]).endswith("022-qwen38-low-template/chat_template.jinja"))
 
     def test_budget_note_stays_before_the_answer_suffix(self):
         prompt = baseline_runner.user_prompt("What is 2+2?", "\n\nANSWER", "思考不得超過 256 個 token。")

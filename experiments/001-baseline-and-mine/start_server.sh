@@ -32,4 +32,7 @@ args=(
 if [[ -n "${VLLM_LOGITS_PROCESSORS:-}" ]]; then
   args+=(--logits-processors "$VLLM_LOGITS_PROCESSORS")
 fi
+if [[ -n "${CHAT_TEMPLATE:-}" ]]; then
+  args+=(--chat-template "$CHAT_TEMPLATE")
+fi
 exec "$VLLM_BIN" "${args[@]}"
