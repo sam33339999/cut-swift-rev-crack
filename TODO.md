@@ -79,3 +79,10 @@
   - 開發集 14 題、seed 101–104。抽樣前重載。
   - 驗收：`experiments/023-qwen-sharp-terse/` 有 `RESULTS.md`、`summary.json`、56 筆且沒有傳輸錯誤。`COMPARE.md` 補上這一列。用 `judgement` 寫結論。這仍是開發集。達標之後才考慮第 45 條，而且訓練提示裡不放這一段。
   - 結果：2026-10-08，難題 26/32，思考中位數 552.0。沒有達標。答對少 4。不開第 45 條。`experiments/023-qwen-sharp-terse/`
+
+- [x] 045 雙獎勵 LoRA（第 45 條）
+  - 訓練題用新的 `make_problems.py`，不碰開發集和留出題。訓練提示不放 Sharp。
+  - 答錯獎勵是 0。答對才給整體長度分，並扣第一次答對之後的思考比例。
+  - 評開發集兩次：只掛 LoRA，以及 LoRA 加 023 的 Sharp 模板。023 不重跑。
+  - 驗收：`experiments/045-dual-reward/` 寫明訓練範圍、兩格的答對和思考中位數，`COMPARE.md` 補上這兩列。用 `judgement` 寫結論。沒達標就寫沒達標。
+  - 結果：2026-10-08。LoRA 訓完，但只掛上去評 `e01` 就陷入 `ANS` 重複，頂到 8192 被截斷。開發集沒有評完，不記成有效縮短，不進分數表。說明在 `experiments/045-dual-reward/FAILURE.md`。

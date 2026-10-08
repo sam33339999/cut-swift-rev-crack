@@ -1,0 +1,233 @@
+{
+  "version": 1,
+  "model": "Ornith-1.5-9B",
+  "split": "train-045",
+  "suffix": "\n\nThe visible reply, after reasoning, must end with exactly one line:\nANSWER: <integer>\nDo not write anything after that line. Write the integer without commas, units, or words.",
+  "note": "Method 45 training prompts. Not the dev set and not the held-out set.",
+  "problems": [
+    {
+      "id": "tr01",
+      "basket": "easy",
+      "answer": "377",
+      "verify": "29*13",
+      "question": "What is 29 times 13?"
+    },
+    {
+      "id": "tr02",
+      "basket": "easy",
+      "answer": "407",
+      "verify": "37*11",
+      "question": "What is 37 times 11?"
+    },
+    {
+      "id": "tr03",
+      "basket": "easy",
+      "answer": "369",
+      "verify": "41*9",
+      "question": "What is 41 times 9?"
+    },
+    {
+      "id": "tr04",
+      "basket": "easy",
+      "answer": "258",
+      "verify": "43*6",
+      "question": "What is 43 times 6?"
+    },
+    {
+      "id": "tr05",
+      "basket": "easy",
+      "answer": "378",
+      "verify": "27*14",
+      "question": "What is 27 times 14?"
+    },
+    {
+      "id": "tr06",
+      "basket": "easy",
+      "answer": "264",
+      "verify": "33*8",
+      "question": "What is 33 times 8?"
+    },
+    {
+      "id": "tr07",
+      "basket": "easy",
+      "answer": "273",
+      "verify": "39*7",
+      "question": "What is 39 times 7?"
+    },
+    {
+      "id": "tr08",
+      "basket": "easy",
+      "answer": "368",
+      "verify": "23*16",
+      "question": "What is 23 times 16?"
+    },
+    {
+      "id": "tr09",
+      "basket": "easy",
+      "answer": "2048",
+      "verify": "2**11",
+      "question": "What is 2 to the power 11?"
+    },
+    {
+      "id": "tr10",
+      "basket": "easy",
+      "answer": "8192",
+      "verify": "2**13",
+      "question": "What is 2 to the power 13?"
+    },
+    {
+      "id": "tr11",
+      "basket": "easy",
+      "answer": "16384",
+      "verify": "2**14",
+      "question": "What is 2 to the power 14?"
+    },
+    {
+      "id": "tr12",
+      "basket": "easy",
+      "answer": "32768",
+      "verify": "2**15",
+      "question": "What is 2 to the power 15?"
+    },
+    {
+      "id": "tr13",
+      "basket": "easy",
+      "answer": "6",
+      "verify": "gcd(48,18)",
+      "question": "What is the greatest common divisor of 48 and 18?"
+    },
+    {
+      "id": "tr14",
+      "basket": "easy",
+      "answer": "15",
+      "verify": "gcd(105,30)",
+      "question": "What is the greatest common divisor of 105 and 30?"
+    },
+    {
+      "id": "tr15",
+      "basket": "easy",
+      "answer": "8",
+      "verify": "gcd(64,24)",
+      "question": "What is the greatest common divisor of 64 and 24?"
+    },
+    {
+      "id": "tr16",
+      "basket": "easy",
+      "answer": "7",
+      "verify": "gcd(91,35)",
+      "question": "What is the greatest common divisor of 91 and 35?"
+    },
+    {
+      "id": "tr17",
+      "basket": "hard",
+      "answer": "85",
+      "verify": "smallest n with at least 20 trailing zeros",
+      "question": "Find the smallest positive integer n such that n! has at least 20 trailing zeros."
+    },
+    {
+      "id": "tr18",
+      "basket": "hard",
+      "answer": "125",
+      "verify": "smallest n with at least 30 trailing zeros",
+      "question": "Find the smallest positive integer n such that n! has at least 30 trailing zeros."
+    },
+    {
+      "id": "tr19",
+      "basket": "hard",
+      "answer": "165",
+      "verify": "smallest n with at least 40 trailing zeros",
+      "question": "Find the smallest positive integer n such that n! has at least 40 trailing zeros."
+    },
+    {
+      "id": "tr20",
+      "basket": "hard",
+      "answer": "80",
+      "verify": "inclusion up to 200",
+      "question": "How many positive integers n ≤ 200 are divisible by 3 or by 5, but not divisible by 7?"
+    },
+    {
+      "id": "tr21",
+      "basket": "hard",
+      "answer": "120",
+      "verify": "inclusion up to 300",
+      "question": "How many positive integers n ≤ 300 are divisible by 3 or by 5, but not divisible by 7?"
+    },
+    {
+      "id": "tr22",
+      "basket": "hard",
+      "answer": "320",
+      "verify": "inclusion up to 800",
+      "question": "How many positive integers n ≤ 800 are divisible by 3 or by 5, but not divisible by 7?"
+    },
+    {
+      "id": "tr23",
+      "basket": "hard",
+      "answer": "776",
+      "verify": "2^40 mod 1000",
+      "question": "Find 2^40 modulo 1000. The answer is the remainder, an integer from 0 to 999."
+    },
+    {
+      "id": "tr24",
+      "basket": "hard",
+      "answer": "424",
+      "verify": "2^70 mod 1000",
+      "question": "Find 2^70 modulo 1000. The answer is the remainder, an integer from 0 to 999."
+    },
+    {
+      "id": "tr25",
+      "basket": "hard",
+      "answer": "129",
+      "verify": "primes below 30",
+      "question": "Find the sum of all prime numbers strictly less than 30."
+    },
+    {
+      "id": "tr26",
+      "basket": "hard",
+      "answer": "197",
+      "verify": "primes below 40",
+      "question": "Find the sum of all prime numbers strictly less than 40."
+    },
+    {
+      "id": "tr27",
+      "basket": "hard",
+      "answer": "791",
+      "verify": "primes below 80",
+      "question": "Find the sum of all prime numbers strictly less than 80."
+    },
+    {
+      "id": "tr28",
+      "basket": "hard",
+      "answer": "3",
+      "verify": "consecutive 30",
+      "question": "A consecutive representation of a positive integer N is a sequence of two or more consecutive positive integers that add up to N. How many consecutive representations does 30 have?"
+    },
+    {
+      "id": "tr29",
+      "basket": "hard",
+      "answer": "5",
+      "verify": "consecutive 75",
+      "question": "A consecutive representation of a positive integer N is a sequence of two or more consecutive positive integers that add up to N. How many consecutive representations does 75 have?"
+    },
+    {
+      "id": "tr30",
+      "basket": "hard",
+      "answer": "5",
+      "verify": "consecutive 90",
+      "question": "A consecutive representation of a positive integer N is a sequence of two or more consecutive positive integers that add up to N. How many consecutive representations does 90 have?"
+    },
+    {
+      "id": "tr31",
+      "basket": "hard",
+      "answer": "463",
+      "verify": "factor 3^7+2^7",
+      "question": "Find the largest prime factor of 3^7 + 2^7."
+    },
+    {
+      "id": "tr32",
+      "basket": "hard",
+      "answer": "577",
+      "verify": "factor 3^9+2^9",
+      "question": "Find the largest prime factor of 3^9 + 2^9."
+    }
+  ]
+}

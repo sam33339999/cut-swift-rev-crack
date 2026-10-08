@@ -35,4 +35,7 @@ fi
 if [[ -n "${CHAT_TEMPLATE:-}" ]]; then
   args+=(--chat-template "$CHAT_TEMPLATE")
 fi
+if [[ -n "${VLLM_LORA_MODULES:-}" ]]; then
+  args+=(--enable-lora --max-loras 1 --max-lora-rank "${VLLM_MAX_LORA_RANK:-16}" --lora-modules "$VLLM_LORA_MODULES")
+fi
 exec "$VLLM_BIN" "${args[@]}"

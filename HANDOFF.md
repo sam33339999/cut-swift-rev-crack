@@ -57,6 +57,7 @@
 不要做的：
 
 - 重跑 001–023。
+- 把 `experiments/045-dual-reward/adapter/` 掛上去當可用模型。那次更新讓簡單題重複 `ANS`，說明在 `experiments/045-dual-reward/FAILURE.md`。
 - 把 005、006 的懲罰加大後再掃一次。輕罰已經沒有差距。
 - 在同一份 14 題上做 LoRA、合併或 GSPO。文件第 6 節寫明，解碼沒有在留出的題上站住之前不要訓練。
 - 把中位數少幾個 token 的結果寫成成功。

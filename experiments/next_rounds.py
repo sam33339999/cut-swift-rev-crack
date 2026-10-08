@@ -484,6 +484,7 @@ def sample_round(
                 },
                 system=system_for(problem),
                 user_note=spec.get("user_note"),
+                request_model=spec.get("request_model") or "Ornith-1.5-9B",
             )
         except Exception as exc:  # noqa: BLE001 — stored, then the batch continues
             return baseline_runner.error_row(

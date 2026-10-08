@@ -98,6 +98,7 @@ def call_one(
     knob: dict | None = None,
     system: str | None = None,
     user_note: str | None = None,
+    request_model: str = "Ornith-1.5-9B",
 ) -> dict:
     prompt = user_prompt(problem["question"], suffix, user_note)
     messages = []
@@ -105,7 +106,7 @@ def call_one(
         messages.append({"role": "system", "content": system})
     messages.append({"role": "user", "content": prompt})
     body = {
-        "model": "Ornith-1.5-9B",
+        "model": request_model,
         "messages": messages,
         "max_tokens": max_tokens,
         "seed": seed,
