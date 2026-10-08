@@ -1,0 +1,75 @@
+{
+  "experiment": "050-thinking-cap",
+  "knob": {
+    "method": "thinking-cap",
+    "rule": "Thinking-Cap 獎勵接到 Ornith-1.5-9B。一輪、學習率 2e-6、KL 0.04、優勢只在思考區。不是通用繁體訓練。",
+    "system": null,
+    "extra_body": {}
+  },
+  "reload": {
+    "ready_at": "2026-10-08T05:56:18.579441+00:00",
+    "model": "Ornith-1.5-9B",
+    "models": [
+      "Ornith-1.5-9B",
+      "m50cap"
+    ],
+    "max_model_len": 20480,
+    "pid": 116187,
+    "stopped_and_reloaded_by": "experiments/050-thinking-cap/run_round.py"
+  },
+  "easy": {
+    "basket": "easy",
+    "n": 24,
+    "n_correct": 24,
+    "n_truncated": 0,
+    "accuracy": 1.0,
+    "reasoning_mean": 43.541666666666664,
+    "reasoning_median": 37.0,
+    "n_lengths": 24
+  },
+  "hard": {
+    "basket": "hard",
+    "n": 32,
+    "n_correct": 30,
+    "n_truncated": 0,
+    "accuracy": 0.9375,
+    "reasoning_mean": 1509.84375,
+    "reasoning_median": 713.5,
+    "n_lengths": 32
+  },
+  "baseline_easy": {
+    "basket": "easy",
+    "n": 24,
+    "n_correct": 24,
+    "n_truncated": 0,
+    "accuracy": 1.0,
+    "reasoning_mean": 44.375,
+    "reasoning_median": 37.0,
+    "n_lengths": 24
+  },
+  "baseline_hard": {
+    "basket": "hard",
+    "n": 32,
+    "n_correct": 30,
+    "n_truncated": 1,
+    "accuracy": 0.9375,
+    "reasoning_mean": 1621.1875,
+    "reasoning_median": 888.5,
+    "n_lengths": 32
+  },
+  "delta_easy": {
+    "n_correct": 0,
+    "n_truncated": 0,
+    "reasoning_mean": -0.8333333333333357,
+    "reasoning_median": 0.0
+  },
+  "delta_hard": {
+    "n_correct": 0,
+    "n_truncated": -1,
+    "reasoning_mean": -111.34375,
+    "reasoning_median": -175.0
+  },
+  "judgement": "難題思考中位數至少少了 15%，答對筆數沒有少超過 1。這是開發集上的一次比較，不是測試集結論。",
+  "n_rows": 56,
+  "n_errors": 0
+}

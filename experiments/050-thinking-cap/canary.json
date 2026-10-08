@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "experiment": "050-canary",
+  "problem_id": "e01",
+  "basket": "easy",
+  "seed": 101,
+  "gold": "391",
+  "prompt": "What is 17 times 23?\n\nThe visible reply, after reasoning, must end with exactly one line:\nANSWER: <integer>\nDo not write anything after that line. Write the integer without commas, units, or words.",
+  "sampling": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 8192,
+    "enable_thinking": true
+  },
+  "request_started": "2026-10-08T05:56:19.177029+00:00",
+  "request_finished": "2026-10-08T05:56:19.177047+00:00",
+  "wall_s": 0.597,
+  "http_status": 200,
+  "error": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 62,
+    "total_tokens": 84,
+    "completion_tokens": 22,
+    "completion_tokens_details": {
+      "reasoning_tokens": 12
+    }
+  },
+  "reasoning_tokens_api": 12,
+  "answer_tokens_api": 10,
+  "reasoning": "17 × 23 = 391\n",
+  "content": "\n\nANSWER: 391",
+  "extracted_answer": "391",
+  "strict_correct": true,
+  "truncated": false,
+  "knob": {
+    "method": "thinking-cap",
+    "request_model": "m50cap"
+  },
+  "gold_in_reasoning": true,
+  "gold_in_content": true
+}

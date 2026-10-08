@@ -92,3 +92,8 @@
   - 目標是通用繁體回答、思考短、第二輪仍有正文。語料用 `yentinglin/twllm-data`，不是數學題。
   - 結果：2026-10-08。沒有通過。第一題「國慶日」停在英文思考區，可見回答是空的。事後再測，小題和第二輪都不比基座好。說明在 `experiments/049-zh-general/FAILURE.md`。
   - 048 是中途發現仍在練繁體數學而停掉的，沒有 adapter。`experiments/048-zh-short/STOPPED.md`。
+
+- [x] 050 Thinking-Cap 獎勵接到本機 Ornith-1.5-9B
+  - 來源是 khudgins/ornith-thinking-cap。獎勵是答對才扣思考長度。一輪、學習率 2e-6、KL 0.04、rank 8。不重跑 001–049。
+  - 結果：2026-10-08。難題 30/32，思考中位數 713.5。開發集上達標。簡單題 24/24，中位數 37。`experiments/050-thinking-cap/`
+  - 繁體三題沒有過。第二輪快取失效沒有可見回答。不把 `m50cap` 當通用模型。

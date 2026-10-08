@@ -42,6 +42,7 @@
 | 022 | Qwen3.8 low 模板句 | 32/32 | 553.0 | 開發集上達標。簡單題 24/24，中位數 36 |
 | 023 | Qwen Sharp terseness 模板段 | 26/32 | 552.0 | 答對少 4。沒有達標 |
 | 047 | 第 45 條 LoRA，優勢只在思考區 | 31/32 | 560.5 | 開發集上達標。第一次 adapter 因 `ANS` 迴圈作廢 |
+| 050 | Thinking-Cap 獎勵，一輪 LoRA | 30/32 | 713.5 | 開發集上達標。不是通用繁體模型 |
 
 達標規則在 `experiments/summary.py` 的 `judgement`：難題中位數至少少 15%，而且答對筆數沒有少超過 1。沒達標不要寫成有效縮短。004 和 009 達標，但是開發集，不是測試集。簡單題在 004 從 24/24 掉到 23/24。009 的簡單題答對沒掉，思考中位數變長。
 
@@ -60,6 +61,7 @@
 - 重跑 001–023。
 - 把 `experiments/045-dual-reward/adapter/` 掛上去當可用模型。那次更新讓簡單題重複 `ANS`，說明在 `experiments/045-dual-reward/FAILURE.md`。
 - 把 `zhgeneral`（`experiments/049-zh-general/adapter/`）當通用繁體模型。它沒有把小題和第二輪答完，說明在 `experiments/049-zh-general/FAILURE.md`。通用聊天用基座 `Ornith-1.5-9B`。
+- 把 `m50cap`（`experiments/050-thinking-cap/adapter/`）當通用繁體模型。開發集數學難題 30/32、中位數 713.5，但是第二輪快取失效沒有可見回答。說明在 `experiments/050-thinking-cap/RESULTS.md`。
 - 把 005、006 的懲罰加大後再掃一次。輕罰已經沒有差距。
 - 在同一份 14 題上做 LoRA、合併或 GSPO。文件第 6 節寫明，解碼沒有在留出的題上站住之前不要訓練。
 - 把中位數少幾個 token 的結果寫成成功。

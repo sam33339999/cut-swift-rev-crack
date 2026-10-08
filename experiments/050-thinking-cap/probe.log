@@ -1,0 +1,14 @@
+{"t": 1791438900.5151734, "kind": "start", "decision": "keep", "chars": 0}
+{"t": 1791438930.5157945, "kind": "tick", "decision": "keep", "chars": 0}
+{"t": 1791438960.516167, "kind": "tick", "decision": "keep", "chars": 0}
+{"t": 1791438990.5165656, "kind": "tick", "decision": "keep", "chars": 0}
+{"t": 1791439020.5169764, "kind": "tick", "decision": "keep", "chars": 332}
+{"t": 1791439050.5174403, "kind": "tick", "decision": "keep", "chars": 2795}
+{"t": 1791439080.5178885, "kind": "tick", "decision": "keep", "chars": 3784}
+{"t": 1791439110.518543, "kind": "tick", "decision": "keep", "chars": 12082}
+{"t": 1791439140.5191958, "kind": "tick", "decision": "keep", "chars": 12611}
+{"t": 1791439170.5201826, "kind": "tick", "decision": "keep", "chars": 24626}
+{"t": 1791439200.5212533, "kind": "tick", "decision": "keep", "chars": 27703}
+{"t": 1791439230.522506, "kind": "tick", "decision": "keep", "chars": 24299}
+{"t": 1791439260.5231478, "kind": "tick", "decision": "keep", "chars": 8592}
+{"t": 1791439290.523507, "kind": "tick", "decision": "keep", "chars": 1860}

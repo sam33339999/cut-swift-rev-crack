@@ -1,0 +1,16 @@
+{
+  "groups": 32,
+  "sequences": 128,
+  "updates": 108,
+  "skipped": 20,
+  "skipped_for_length": 0,
+  "epochs": 1,
+  "kl_coef": 0.04,
+  "lr": 2e-06,
+  "grad_clip": 1.0,
+  "max_len": 4096,
+  "lam": 0.05,
+  "adapter": "/content/cut-swift-rev-crack/experiments/050-thinking-cap/adapter",
+  "base_index_mtime": 1791416431.7747312,
+  "mean_reward": 1.0607234954833984
+}
