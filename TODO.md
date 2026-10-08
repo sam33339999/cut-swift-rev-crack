@@ -72,3 +72,10 @@
   - 開發集 14 題、seed 101–104。抽樣前重載，服務帶上這份 template。
   - 驗收：`experiments/022-qwen38-low-template/` 有 `RESULTS.md`、`summary.json`、56 筆且沒有傳輸錯誤。`COMPARE.md` 補上這一列。用 `judgement` 寫結論。這仍是開發集。
   - 結果：2026-10-08，難題 32/32，思考中位數 553.0。開發集上達標。簡單題 24/24，中位數 36。`experiments/022-qwen38-low-template/`
+
+- [x] 023 Qwen Sharp 的 terseness 模板段
+  - 不在第 1–62 條。只加 Sharp 在思考開啟時附加的那一段系統提示。不含 froggeric 的工具修正，也不含 022 的 low 句子。
+  - 思考仍預填 `<think>`。沒有另外的系統提示，解碼和 001 相同。
+  - 開發集 14 題、seed 101–104。抽樣前重載。
+  - 驗收：`experiments/023-qwen-sharp-terse/` 有 `RESULTS.md`、`summary.json`、56 筆且沒有傳輸錯誤。`COMPARE.md` 補上這一列。用 `judgement` 寫結論。這仍是開發集。達標之後才考慮第 45 條，而且訓練提示裡不放這一段。
+  - 結果：2026-10-08，難題 26/32，思考中位數 552.0。沒有達標。答對少 4。不開第 45 條。`experiments/023-qwen-sharp-terse/`

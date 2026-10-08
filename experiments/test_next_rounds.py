@@ -80,6 +80,7 @@ class NextRoundsTest(unittest.TestCase):
                 "020-ban-stall-en",
                 "021-answer-first-en",
                 "022-qwen38-low-template",
+                "023-qwen-sharp-terse",
             ],
         )
         no_thinking = specs[0]["extra_body"]["chat_template_kwargs"]["enable_thinking"]
@@ -133,6 +134,10 @@ class NextRoundsTest(unittest.TestCase):
         self.assertIsNone(low["system"])
         self.assertEqual(low["extra_body"], {})
         self.assertTrue(str(low["chat_template"]).endswith("022-qwen38-low-template/chat_template.jinja"))
+        sharp = by_name["023-qwen-sharp-terse"]
+        self.assertIsNone(sharp["system"])
+        self.assertEqual(sharp["extra_body"], {})
+        self.assertTrue(str(sharp["chat_template"]).endswith("023-qwen-sharp-terse/chat_template.jinja"))
 
     def test_budget_note_stays_before_the_answer_suffix(self):
         prompt = baseline_runner.user_prompt("What is 2+2?", "\n\nANSWER", "思考不得超過 256 個 token。")

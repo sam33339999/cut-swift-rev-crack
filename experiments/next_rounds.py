@@ -48,6 +48,7 @@ QWEN38_LOW_SENTENCE = (
     "moving directly to the conclusion without unnecessary elaboration."
 )
 QWEN38_LOW_TEMPLATE = ROOT / "experiments" / "022-qwen38-low-template" / "chat_template.jinja"
+SHARP_TERSE_TEMPLATE = ROOT / "experiments" / "023-qwen-sharp-terse" / "chat_template.jinja"
 TEXT_BUDGETS = (256, 512, 1024, 2048)
 NOWAIT_WORDS = ("wait", "Wait", "hmm", "Hmm", "alternatively", "Alternatively")
 COMPARE_PATH = ROOT / "experiments" / "COMPARE.md"
@@ -195,6 +196,18 @@ def round_specs(tokenizer) -> list[dict]:
             "extra_body": {},
             "chat_template": str(QWEN38_LOW_TEMPLATE),
             "knob_label": "Qwen3.8 low 模板句",
+        },
+        {
+            "name": "023-qwen-sharp-terse",
+            "method": "模板，不在第 1–62 條",
+            "rule": (
+                "只換 chat template。在 Ornith 原模板的無工具路徑加上 Qwen Sharp 思考開啟時的 terseness 那一段。"
+                "不含 froggeric 的工具修正，也不含 022 的 low 句子。思考預填仍是 <think>。沒有系統提示，解碼和 001 相同。"
+            ),
+            "system": None,
+            "extra_body": {},
+            "chat_template": str(SHARP_TERSE_TEMPLATE),
+            "knob_label": "Qwen Sharp terseness 模板段",
         },
     ]
 
