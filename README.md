@@ -27,6 +27,7 @@
 | `TODO.md` | 待辦。勾選以這個檔為準 |
 | `HANDOFF.md` | 環境、評分、已經做完的輪、不要做的事 |
 | `experiments/COMPARE.md` | 各輪分數 |
+| `experiments/GENERAL-ZH.md` | 通用繁體還沒做到。Thinking-Cap 再加步數也不會到。還能調的項目在這裡 |
 | `experiments/00N-*/` | 該輪的 `RESULTS.md`、`summary.json`、`results.jsonl` |
 | `experiments/grader.py` | 正確與否的定義 |
 | `test-reason-flow.md` | 全部可試方法 |

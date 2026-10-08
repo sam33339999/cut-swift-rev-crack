@@ -97,3 +97,4 @@
   - 來源是 khudgins/ornith-thinking-cap。獎勵是答對才扣思考長度。一輪、學習率 2e-6、KL 0.04、rank 8。不重跑 001–049。
   - 結果：2026-10-08。難題 30/32，思考中位數 713.5。開發集上達標。簡單題 24/24，中位數 37。`experiments/050-thinking-cap/`
   - 繁體三題沒有過。第二輪快取失效沒有可見回答。不把 `m50cap` 當通用模型。
+  - 再調 Thinking-Cap 也不會變成通用繁體。049 是抽樣，長的多輪大多沒練到。還能動的項目寫在 `experiments/GENERAL-ZH.md`。
