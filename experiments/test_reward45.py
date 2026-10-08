@@ -55,5 +55,42 @@ class Reward45Test(unittest.TestCase):
         self.assertTrue({"easy", "hard"} <= {item["basket"] for item in payload["problems"]})
 
 
+class MaskAndProbeTest(unittest.TestCase):
+    def test_advantage_is_zero_on_answer_tokens_and_open_inside_think(self):
+        reward = load(REWARD, "reward45mask")
+        pieces = ["17", " × ", "23", " = ", "391", "</think>", "ANSWER", ":", " 391"]
+        mask = reward.advantage_mask(pieces)
+        self.assertEqual(mask[pieces.index("</think>")], 1.0)
+        self.assertEqual(mask[0], 1.0)
+        self.assertEqual(mask[pieces.index("ANSWER")], 0.0)
+        self.assertEqual(mask[pieces.index(":")], 0.0)
+        self.assertEqual(mask[-1], 0.0)
+        self.assertEqual(reward.advantage_mask(["ANS"]), [0.0])
+
+    def test_over_long_sequence_keeps_the_post_answer_span(self):
+        reward = load(REWARD, "reward45span")
+        token_ids = list(range(20))
+        kept = reward.trainable_post_answer_span(token_ids, prompt_len=4, first_correct_index=6, max_len=10)
+        self.assertIsNotNone(kept)
+        self.assertEqual(kept, list(range(10, 20)))
+        self.assertIsNone(
+            reward.trainable_post_answer_span(token_ids, prompt_len=4, first_correct_index=None, max_len=10)
+        )
+        self.assertEqual(
+            reward.trainable_post_answer_span(list(range(5)), prompt_len=1, first_correct_index=1, max_len=10),
+            list(range(5)),
+        )
+
+    def test_probe_discards_the_ans_loop_and_keeps_a_normal_answer(self):
+        reward = load(REWARD, "reward45probe")
+        loop = "17 × 23 = 391" + "ANS" * 40
+        self.assertEqual(reward.probe_decision(loop, content="", truncated=True), "discard")
+        self.assertTrue(reward.is_ans_collapse(loop, "", True))
+        normal = "17 × 23 = 391.\nANSWER: 391"
+        self.assertEqual(reward.probe_decision(normal, content="ANSWER: 391", truncated=False), "keep")
+        self.assertEqual(reward.PROBE_PERIOD_S, 30)
+        self.assertEqual(reward.probe_decision.__code__.co_varnames[:3], ("text", "content", "truncated"))
+
+
 if __name__ == "__main__":
     unittest.main()

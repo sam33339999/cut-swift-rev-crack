@@ -1,0 +1,12 @@
+{"t": 1791433506.5491247, "kind": "start", "decision": "keep", "chars": 0, "period_s": 30}
+{"t": 1791433536.5497253, "kind": "tick", "decision": "keep", "chars": 0, "period_s": 30}
+{"t": 1791433566.5500348, "kind": "tick", "decision": "keep", "chars": 0, "period_s": 30}
+{"t": 1791433596.5504208, "kind": "tick", "decision": "keep", "chars": 1890, "period_s": 30}
+{"t": 1791433626.5507264, "kind": "tick", "decision": "keep", "chars": 543, "period_s": 30}
+{"t": 1791433656.5511792, "kind": "tick", "decision": "keep", "chars": 6586, "period_s": 30}
+{"t": 1791433686.5522368, "kind": "tick", "decision": "keep", "chars": 15539, "period_s": 30}
+{"t": 1791433716.5529876, "kind": "tick", "decision": "keep", "chars": 15553, "period_s": 30}
+{"t": 1791433746.5540948, "kind": "tick", "decision": "keep", "chars": 28073, "period_s": 30}
+{"t": 1791433776.5552902, "kind": "tick", "decision": "keep", "chars": 15454, "period_s": 30}
+{"t": 1791433806.5561466, "kind": "tick", "decision": "keep", "chars": 14566, "period_s": 30}
+{"t": 1791433836.5565546, "kind": "tick", "decision": "keep", "chars": 3633, "period_s": 30}

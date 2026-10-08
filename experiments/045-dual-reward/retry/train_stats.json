@@ -1,0 +1,15 @@
+{
+  "groups": 32,
+  "sequences": 128,
+  "updates": 108,
+  "skipped": 20,
+  "skipped_for_length": 0,
+  "kept_long": 0,
+  "epochs": 1,
+  "kl_coef": 0.1,
+  "lr": 1e-05,
+  "grad_clip": 1.0,
+  "max_len": 4096,
+  "adapter": "/content/cut-swift-rev-crack/experiments/045-dual-reward/retry/adapter",
+  "mean_reward": 0.9673233724332947
+}
