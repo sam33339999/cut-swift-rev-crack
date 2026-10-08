@@ -66,8 +66,9 @@
   - 驗收：三個目錄各有 `RESULTS.md`、`summary.json`、56 筆且沒有傳輸錯誤。`COMPARE.md` 各補一列。用 `judgement` 寫結論，沒達標就寫沒達標。這仍是開發集。
   - 結果：2026-10-08。019 難題 29/32，中位數 522.0，開發集上達標，簡單題 21/24。020 難題 31/32，中位數 682.0，開發集上達標。021 難題 27/32，中位數 597.5，沒有達標。
 
-- [ ] 022 Qwen3.8 的 low 模板句
+- [x] 022 Qwen3.8 的 low 模板句
   - 不在第 1–62 條。清單裡的模板只提到 `enable_thinking=false`（003 已跑）和訓練時對齊多輪思考。Ornith 這份模板沒有 low / medium / xhigh 的句子。
   - 只改 chat template：無工具路徑加上 Qwen3.8 的 low 那一句。思考仍預填 `<think>`。沒有另外的系統提示，解碼和 001 相同。
   - 開發集 14 題、seed 101–104。抽樣前重載，服務帶上這份 template。
   - 驗收：`experiments/022-qwen38-low-template/` 有 `RESULTS.md`、`summary.json`、56 筆且沒有傳輸錯誤。`COMPARE.md` 補上這一列。用 `judgement` 寫結論。這仍是開發集。
+  - 結果：2026-10-08，難題 32/32，思考中位數 553.0。開發集上達標。簡單題 24/24，中位數 36。`experiments/022-qwen38-low-template/`
