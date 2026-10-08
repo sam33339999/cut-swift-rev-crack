@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "model": "Ornith-1.5-9B",
+  "split": "heldout",
+  "prompt_language": "en",
+  "suffix": "\n\nThe visible reply, after reasoning, must end with exactly one line:\nANSWER: <integer>\nDo not write anything after that line. Write the integer without commas, units, or words.",
+  "note": "Same families as experiments/001-baseline-and-mine/problems.json, different constants. Not used to choose prompts or knobs.",
+  "problems": [
+    {
+      "id": "te01",
+      "basket": "easy",
+      "answer": "589",
+      "verify": "19*31",
+      "question": "What is 19 times 31?"
+    },
+    {
+      "id": "te02",
+      "basket": "easy",
+      "answer": "4096",
+      "verify": "2**12",
+      "question": "What is 2 to the power 12?"
+    },
+    {
+      "id": "te03",
+      "basket": "easy",
+      "answer": "12",
+      "verify": "gcd(96, 36)",
+      "question": "What is the greatest common divisor of 96 and 36?"
+    },
+    {
+      "id": "te04",
+      "basket": "easy",
+      "answer": "10",
+      "verify": "divisor count of 48 = (4+1)*(1+1)",
+      "question": "How many positive divisors does 48 have?"
+    },
+    {
+      "id": "te05",
+      "basket": "easy",
+      "answer": "1275",
+      "verify": "50*51/2",
+      "question": "What is the sum of the integers from 1 through 50?"
+    },
+    {
+      "id": "te06",
+      "basket": "easy",
+      "answer": "6",
+      "verify": "pow(13, 3, 7)",
+      "question": "What is the remainder when 13 cubed is divided by 7?"
+    },
+    {
+      "id": "th01",
+      "basket": "hard",
+      "answer": "205",
+      "verify": "smallest n with v_5(n!) >= 50",
+      "question": "Find the smallest positive integer n such that n! has at least 50 trailing zeros."
+    },
+    {
+      "id": "th02",
+      "basket": "hard",
+      "answer": "200",
+      "verify": "inclusion-exclusion up to 500",
+      "question": "How many positive integers n ≤ 500 are divisible by 3 or by 5, but not divisible by 7?"
+    },
+    {
+      "id": "th03",
+      "basket": "hard",
+      "answer": "3",
+      "verify": "count of a<b<c, a+b+c=120, a^2+b^2=c^2",
+      "question": "How many Pythagorean triples of positive integers (a, b, c) satisfy a < b < c, a squared plus b squared equal to c squared, and a + b + c = 120?"
+    },
+    {
+      "id": "th04",
+      "basket": "hard",
+      "answer": "401",
+      "verify": "3**8+2**8=6817, factors=[17, 401]",
+      "question": "Find the largest prime factor of 3^8 + 2^8."
+    },
+    {
+      "id": "th05",
+      "basket": "hard",
+      "answer": "200",
+      "verify": "n in [8, 24, 27, 44, 48, 49]",
+      "question": "Call a positive integer squareful when some perfect square greater than 1 divides it. Find the sum of all positive integers n < 60 such that both n and n+1 are squareful."
+    },
+    {
+      "id": "th06",
+      "basket": "hard",
+      "answer": "224",
+      "verify": "pow(2, 90, 1000)",
+      "question": "Find 2^90 modulo 1000. The answer is the remainder, an integer from 0 to 999."
+    },
+    {
+      "id": "th07",
+      "basket": "hard",
+      "answer": "5",
+      "verify": "starts 22+23; 14+15+16; 7+8+9+10+11; 5+6+7+8+9+10; 1+2+3+4+5+6+7+8+9",
+      "question": "A consecutive representation of a positive integer N is a sequence of two or more consecutive positive integers that add up to N. How many consecutive representations does 45 have?"
+    },
+    {
+      "id": "th08",
+      "basket": "hard",
+      "answer": "440",
+      "verify": "17 primes below 60",
+      "question": "Find the sum of all prime numbers strictly less than 60."
+    }
+  ]
+}

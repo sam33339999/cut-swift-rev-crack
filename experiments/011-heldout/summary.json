@@ -1,0 +1,144 @@
+{
+  "baseline": {
+    "experiment": "011-heldout-baseline",
+    "knob": {
+      "method": "8，留出題",
+      "rule": "留出題，空系統提示，思考打開。解碼和 001 相同。",
+      "system": null,
+      "extra_body": {}
+    },
+    "reload": {
+      "ready_at": "2026-10-08T00:13:36.738829+00:00",
+      "model": "Ornith-1.5-9B",
+      "max_model_len": 20480,
+      "pid": 22922,
+      "stopped_and_reloaded_by": "experiments/011-heldout/run_round.py"
+    },
+    "easy": {
+      "basket": "easy",
+      "n": 24,
+      "n_correct": 24,
+      "n_truncated": 0,
+      "accuracy": 1.0,
+      "reasoning_mean": 56.083333333333336,
+      "reasoning_median": 45.0,
+      "n_lengths": 24
+    },
+    "hard": {
+      "basket": "hard",
+      "n": 32,
+      "n_correct": 31,
+      "n_truncated": 1,
+      "accuracy": 0.96875,
+      "reasoning_mean": 1549.125,
+      "reasoning_median": 641.0,
+      "n_lengths": 32
+    },
+    "baseline_easy": {
+      "basket": "easy",
+      "n": 24,
+      "n_correct": 24,
+      "n_truncated": 0,
+      "accuracy": 1.0,
+      "reasoning_mean": 56.083333333333336,
+      "reasoning_median": 45.0,
+      "n_lengths": 24
+    },
+    "baseline_hard": {
+      "basket": "hard",
+      "n": 32,
+      "n_correct": 31,
+      "n_truncated": 1,
+      "accuracy": 0.96875,
+      "reasoning_mean": 1549.125,
+      "reasoning_median": 641.0,
+      "n_lengths": 32
+    },
+    "delta_easy": {
+      "n_correct": 0,
+      "n_truncated": 0,
+      "reasoning_mean": 0.0,
+      "reasoning_median": 0.0
+    },
+    "delta_hard": {
+      "n_correct": 0,
+      "n_truncated": 0,
+      "reasoning_mean": 0.0,
+      "reasoning_median": 0.0
+    },
+    "judgement": "這是留出題的空提示對照。縮短與否只看同一份題上的 004 提示。",
+    "n_rows": 56,
+    "n_errors": 0
+  },
+  "prompt_short": {
+    "experiment": "011-heldout-prompt-short",
+    "knob": {
+      "method": "1，留出題",
+      "rule": "留出題上只加 004 那一句系統提示。其他不變。",
+      "system": "推理寫短，想到答案就停。",
+      "extra_body": {}
+    },
+    "reload": {
+      "ready_at": "2026-10-08T00:18:48.615017+00:00",
+      "model": "Ornith-1.5-9B",
+      "max_model_len": 20480,
+      "pid": 24471,
+      "stopped_and_reloaded_by": "experiments/011-heldout/run_round.py"
+    },
+    "easy": {
+      "basket": "easy",
+      "n": 24,
+      "n_correct": 22,
+      "n_truncated": 0,
+      "accuracy": 0.9166666666666666,
+      "reasoning_mean": 67.54166666666667,
+      "reasoning_median": 52.5,
+      "n_lengths": 24
+    },
+    "hard": {
+      "basket": "hard",
+      "n": 32,
+      "n_correct": 31,
+      "n_truncated": 0,
+      "accuracy": 0.96875,
+      "reasoning_mean": 1244.3125,
+      "reasoning_median": 598.5,
+      "n_lengths": 32
+    },
+    "baseline_easy": {
+      "basket": "easy",
+      "n": 24,
+      "n_correct": 24,
+      "n_truncated": 0,
+      "accuracy": 1.0,
+      "reasoning_mean": 56.083333333333336,
+      "reasoning_median": 45.0,
+      "n_lengths": 24
+    },
+    "baseline_hard": {
+      "basket": "hard",
+      "n": 32,
+      "n_correct": 31,
+      "n_truncated": 1,
+      "accuracy": 0.96875,
+      "reasoning_mean": 1549.125,
+      "reasoning_median": 641.0,
+      "n_lengths": 32
+    },
+    "delta_easy": {
+      "n_correct": -2,
+      "n_truncated": 0,
+      "reasoning_mean": 11.458333333333336,
+      "reasoning_median": 7.5
+    },
+    "delta_hard": {
+      "n_correct": 0,
+      "n_truncated": -1,
+      "reasoning_mean": -304.8125,
+      "reasoning_median": -42.5
+    },
+    "judgement": "004 的縮短在這份留出題上不在：難題思考中位數沒有少到 15%。",
+    "n_rows": 56,
+    "n_errors": 0
+  }
+}

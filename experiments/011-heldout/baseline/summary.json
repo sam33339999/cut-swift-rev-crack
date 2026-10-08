@@ -1,0 +1,71 @@
+{
+  "experiment": "011-heldout-baseline",
+  "knob": {
+    "method": "8，留出題",
+    "rule": "留出題，空系統提示，思考打開。解碼和 001 相同。",
+    "system": null,
+    "extra_body": {}
+  },
+  "reload": {
+    "ready_at": "2026-10-08T00:13:36.738829+00:00",
+    "model": "Ornith-1.5-9B",
+    "max_model_len": 20480,
+    "pid": 22922,
+    "stopped_and_reloaded_by": "experiments/011-heldout/run_round.py"
+  },
+  "easy": {
+    "basket": "easy",
+    "n": 24,
+    "n_correct": 24,
+    "n_truncated": 0,
+    "accuracy": 1.0,
+    "reasoning_mean": 56.083333333333336,
+    "reasoning_median": 45.0,
+    "n_lengths": 24
+  },
+  "hard": {
+    "basket": "hard",
+    "n": 32,
+    "n_correct": 31,
+    "n_truncated": 1,
+    "accuracy": 0.96875,
+    "reasoning_mean": 1549.125,
+    "reasoning_median": 641.0,
+    "n_lengths": 32
+  },
+  "baseline_easy": {
+    "basket": "easy",
+    "n": 24,
+    "n_correct": 24,
+    "n_truncated": 0,
+    "accuracy": 1.0,
+    "reasoning_mean": 56.083333333333336,
+    "reasoning_median": 45.0,
+    "n_lengths": 24
+  },
+  "baseline_hard": {
+    "basket": "hard",
+    "n": 32,
+    "n_correct": 31,
+    "n_truncated": 1,
+    "accuracy": 0.96875,
+    "reasoning_mean": 1549.125,
+    "reasoning_median": 641.0,
+    "n_lengths": 32
+  },
+  "delta_easy": {
+    "n_correct": 0,
+    "n_truncated": 0,
+    "reasoning_mean": 0.0,
+    "reasoning_median": 0.0
+  },
+  "delta_hard": {
+    "n_correct": 0,
+    "n_truncated": 0,
+    "reasoning_mean": 0.0,
+    "reasoning_median": 0.0
+  },
+  "judgement": "這是留出題的空提示對照。縮短與否只看同一份題上的 004 提示。",
+  "n_rows": 56,
+  "n_errors": 0
+}

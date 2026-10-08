@@ -39,6 +39,14 @@ def basket_stats(rows: list[dict], basket: str) -> dict:
     }
 
 
+def field_mean_median(rows: list[dict], basket: str, field: str) -> tuple[float | None, float | None]:
+    chosen = [row for row in scored_rows(rows) if row["basket"] == basket]
+    values = [row[field] for row in chosen if isinstance(row.get(field), (int, float))]
+    if not values:
+        return None, None
+    return sum(values) / len(values), statistics.median(values)
+
+
 def compare(current: dict, baseline: dict) -> dict:
     return {
         "n_correct": current["n_correct"] - baseline["n_correct"],

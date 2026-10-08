@@ -79,6 +79,13 @@ def post_json(url: str, body: dict, timeout: int) -> tuple[int, dict]:
         raise RuntimeError(f"HTTP {exc.code}: {detail[:800]}") from exc
 
 
+def user_prompt(question: str, suffix: str, user_note: str | None = None) -> str:
+    """The answer-format suffix stays last. A budget note goes between them."""
+    if user_note:
+        return question + "\n\n" + user_note + suffix
+    return question + suffix
+
+
 def call_one(
     url: str,
     problem: dict,
@@ -90,8 +97,9 @@ def call_one(
     extra_body: dict | None = None,
     knob: dict | None = None,
     system: str | None = None,
+    user_note: str | None = None,
 ) -> dict:
-    prompt = problem["question"] + suffix
+    prompt = user_prompt(problem["question"], suffix, user_note)
     messages = []
     if system:
         messages.append({"role": "system", "content": system})

@@ -1,0 +1,78 @@
+{
+  "experiment": "012-penalty-after-answer",
+  "knob": {
+    "method": "14",
+    "rule": "思考區出現成形答案之前不罰。成形答案指「the answer is」、「answer:」、「\\boxed{」或「答案是」後面緊接整數，而且只看 </think> 之前的文字。出現之後才擋 002 的四個片語（含句首大寫）的下一個 token：let me reconsider、Let me reconsider、to be safe、To be safe、make sure、Make sure、let me recheck、Let me recheck。不是全程 bad_words。",
+    "system": null,
+    "extra_body": {
+      "vllm_xargs": {
+        "penalty_after_answer": 1
+      }
+    }
+  },
+  "reload": {
+    "ready_at": "2026-10-08T00:23:57.132805+00:00",
+    "model": "Ornith-1.5-9B",
+    "max_model_len": 20480,
+    "pid": 26010,
+    "stopped_and_reloaded_by": "experiments/012-penalty-after-answer/run_round.py",
+    "logits_processors": "experiments.penalty_after_answer:PenaltyAfterAnswerProcessor"
+  },
+  "easy": {
+    "basket": "easy",
+    "n": 24,
+    "n_correct": 24,
+    "n_truncated": 0,
+    "accuracy": 1.0,
+    "reasoning_mean": 44.375,
+    "reasoning_median": 37.0,
+    "n_lengths": 24
+  },
+  "hard": {
+    "basket": "hard",
+    "n": 32,
+    "n_correct": 29,
+    "n_truncated": 1,
+    "accuracy": 0.90625,
+    "reasoning_mean": 1685.46875,
+    "reasoning_median": 888.5,
+    "n_lengths": 32
+  },
+  "baseline_easy": {
+    "basket": "easy",
+    "n": 24,
+    "n_correct": 24,
+    "n_truncated": 0,
+    "accuracy": 1.0,
+    "reasoning_mean": 44.375,
+    "reasoning_median": 37.0,
+    "n_lengths": 24
+  },
+  "baseline_hard": {
+    "basket": "hard",
+    "n": 32,
+    "n_correct": 30,
+    "n_truncated": 1,
+    "accuracy": 0.9375,
+    "reasoning_mean": 1621.1875,
+    "reasoning_median": 888.5,
+    "n_lengths": 32
+  },
+  "delta_easy": {
+    "n_correct": 0,
+    "n_truncated": 0,
+    "reasoning_mean": 0.0,
+    "reasoning_median": 0.0
+  },
+  "delta_hard": {
+    "n_correct": -1,
+    "n_truncated": 0,
+    "reasoning_mean": 64.28125,
+    "reasoning_median": 0.0
+  },
+  "judgement": "難題思考中位數沒有變短。不把這輪記成有效縮短。",
+  "n_rows": 56,
+  "n_errors": 0,
+  "answer_armed": 21,
+  "answer_scored": 56
+}
